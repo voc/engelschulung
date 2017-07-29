@@ -1,0 +1,11 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{General Info}{3}{0}{1}
+\beamer@sectionintoc {2}{Angeltypes}{6}{0}{2}
+\beamer@sectionintoc {3}{Camera Hardware}{12}{0}{3}
+\beamer@sectionintoc {4}{Camera Positions and Angles}{17}{0}{4}
+\beamer@sectionintoc {5}{Camera 1 - Closeup Camera}{21}{0}{5}
+\beamer@sectionintoc {6}{Camera 2 - Medium Camera}{27}{0}{6}
+\beamer@sectionintoc {7}{Camera 3 - Wide Shot}{33}{0}{7}
+\beamer@sectionintoc {8}{Video Mixer Tools}{35}{0}{8}
+\beamer@sectionintoc {9}{Video Mixing Guidelines}{41}{0}{9}
+\beamer@sectionintoc {10}{Timeline of a Talk}{45}{0}{10}

@@ -1,0 +1,784 @@
+\documentclass[aspectratio=169]{beamer}
+%\documentclass{beamer}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% packages
+%%%
+
+%%%
+%%% encoding and language set
+%%%
+
+%%% ngerman: language set to new-german
+%\usepackage{nenglish}
+
+%%% babel: language set (can cause some conflicts with package ngerman)
+%%%        use it only for multi-language documents or non-german ones
+%\usepackage[ngerman]{babel}
+
+%%% inputenc: coding of german special characters
+\usepackage[utf8]{inputenc}
+
+%%% fontenc, ae, aecompl: coding of characters in PDF documents
+\usepackage[T1]{fontenc}
+\usepackage{ae,aecompl}
+
+%%%
+%%% technical packages
+%%%
+
+%%% amsmath, amssymb, amstext: support for mathematics ttt
+%\usepackage{amsmath,amssymb,amstext}
+
+%%% psfrag: replace PostScript fonts
+\usepackage{psfrag}
+
+%%% listings: include programming code
+\usepackage{listings}
+\usepackage{courier}
+\lstset{basicstyle=\footnotesize\ttfamily,breaklines=true}
+
+%%% units: technical units
+\usepackage{units}
+
+%%% tiefgestellte zahlen
+\usepackage{subscript}
+
+
+\usepackage[official]{eurosym}
+
+\usetheme{metropolis}           % Use metropolis theme
+
+\usepackage{xspace}
+
+
+%%%
+%%% PDF
+%%%
+
+\usepackage{ifpdf}
+
+%%% Should be LAST usepackage-call!
+%%% For docu on that, see reference on package `hyperref''
+\ifpdf%   (definitions for using pdflatex instead of latex)
+
+%%% graphicx: support for graphics
+%\usepackage[pdftex]{graphicx}
+
+\pdfcompresslevel=9
+
+%%% hyperref (hyperlinks in PDF): for more options or more detailed
+%%%          explanations, see the documentation of the hyperref-package
+\usepackage[%
+%%% general options
+pdftex=true,      %% sets up hyperref for use with the pdftex program
+%plainpages=false, %% set it to false, if pdflatex complains: `destination with same identifier already exists''
+%
+%%% extension options
+backref,      %% adds a backlink text to the end of each item in the bibliography
+pagebackref=false, %% if true, creates backward references as a list of page numbers in the bibliography
+colorlinks=true,   %% turn on colored links (true is better for on-screen reading, false is better for printout versions)
+%
+%%% PDF-specific display options
+bookmarks=true,          %% if true, generate PDF bookmarks (requires two passes of pdflatex)
+bookmarksopen=false,     %% if true, show all PDF bookmarks expanded
+bookmarksnumbered=false, %% if true, add the section numbers to the bookmarks
+%pdfstartpage={1},        %% determines, on which page the PDF file is opened
+pdfpagemode=None         %% None, UseOutlines (=show bookmarks), UseThumbs (show thumbnails), FullScreen
+]{hyperref}
+
+
+%%% provide all graphics (also) in this format, so you don't have
+%%% to add the file extensions to the \includegraphics-command
+%%% and/or you don't have to distinguish between generating
+%%% dvi/ps (through latex) and pdf (through pdflatex)
+\DeclareGraphicsExtensions{.pdf}
+
+\else %else   (definitions for using latex instead of pdflatex)
+
+\usepackage[dvips]{graphicx}
+
+\DeclareGraphicsExtensions{.eps}
+
+\usepackage[%
+dvips,           %% sets up hyperref for use with the dvips driver
+colorlinks=false %% better for printout version; almost every hyperref-extension is eliminated by using dvips
+]{hyperref}
+
+\fi
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Title stuff
+
+\title{Angel Introduction: Camera and Video Mixer}
+\date{\today \currenttime}
+\author{felixs}
+\institute{C3VOC}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% begin document
+%%%
+
+\begin{document}
+
+%\pagenumbering{roman} %% small roman page numbers
+
+%%% include the title
+% \thispagestyle{empty}  %% no header/footer (only) on this page
+\maketitle
+
+%%% start a new page and display the table of contents
+\begin{frame}{Inhalt}
+\tableofcontents
+\end{frame}
+%%% start a new page and display the list of figures
+% \newpage
+% \listoffigures
+
+%%% start a new page and display the list of tables
+% \newpage
+% \listoftables
+
+%%% display the main document on a new page 
+\newpage
+
+% \pagenumbering{arabic} %% normal page numbers (include it, if roman was used above)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% begin main document
+
+
+
+%notes
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%TODO
+
+%witchtige slides rausziehen
+
+%verlinkung erstellen
+%
+
+%wo
+%was
+%allgemeine begriffe
+
+%wichtige folien an mischer/kameraplätze legen
+
+
+
+% Begriffsdefinition
+% Western Style nicht 
+
+% Konvention weit hinten
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+% erweiterungen
+%-----------------------
+
+
+
+
+% Verbesserungen
+% Voctogui in groß
+% streambeobachter als mischerengel 
+% Bildregie als Kommunikationstraining
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Slides
+
+\section{General Info}
+\begin{frame}{General Info I}
+	\begin{itemize}
+		\item All talks get recorded and archived forever
+		\item Consistent quality
+		\item No postproduction of individual signals.
+		\item Livestream content is the same as the one recorded and published
+		\item Less mistakes $\Rightarrow$ better recodings.
+		\item Stream observer shifts
+		\item Difficult talks together with additional video director
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}{General Info II}
+	\begin{itemize}
+		\item Introduction Meeting here
+		\item Complete overview for all new angels
+		\item Short diff for experienced ones
+		\item Shift distribution every day 15:00 to 16:00 in Hall 6.
+		\item Feedback loop and review at those meetings
+		\item Slides available online: \texttt{https://streaming.selfnet.de/engelschulung.pdf}
+	\end{itemize}
+	\begin{figure} 
+		\centering
+		\includegraphics[height=0.4\textheight]{qrcode.png}
+		\label{fig:qr1}
+	\end{figure}
+\end{frame}
+
+\section{Angeltypes}
+\begin{frame}{Angeltypes}
+	\begin{itemize}
+		\item Camera Angels
+		\item Video Mixer Angels
+		\item Stream Observing Angels
+		\item A/V Technician
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Camera Angels}
+	\begin{itemize}
+		\item Operate the fixed cameras in the lecture halls. 
+		\item Usually, two video angels per lecture hall 
+		\item Camera angels will communicate with the Video-Mixer-Angel via intercom,
+		\item Get instrucions to shoot in certain ways. 
+		\item Maintain good camera settings 
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Video Mixer Angels}
+	\begin{itemize}
+		\item Switch the video feed between different sources. 
+		\item Mixed video feed is used for both the live-stream and the recordings 
+		\item You decide which picture, respectively source, is most interesting/important at each moment.
+		\item Work proactively with camera angels through the intercom, 
+		\item Challenging talks, with assistance from an external "image composition director" joining the intercom channel.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Stream Observing Angel}
+	\begin{itemize}
+		\item Open for all camera and mixing angels
+		\item Reflecting the work of colleagues from an audience perspective.
+		\item Examine streams for issues 
+		\item Keep track of sequences appearing hard to consume or violating our rule set. 
+		\item Positive and negative remarks 
+		\item Constructive feedback 
+		\item Instantly report severe issues like "there is no signal" to the VOC Helpdesk.
+		\item Self evaluation and not meant as external monitoring. 
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{A/V Technician}
+	\begin{itemize}
+		\item 2nd level support in the lecture rooms. 
+		\item Familiar with the equipment that is used 
+		\item Able to fix (nearly) all the issues. 
+		\item Longer shifts.
+	\end{itemize}
+\end{frame}
+
+\section{Camera Hardware}
+\begin{frame}{Hardware Camera Controls}
+	\begin{columns}[T,onlytextwidth]
+	\column{0.5\textwidth}
+	\begin{figure} 
+		\centering
+		\def\svgwidth{0.9\textwidth}
+		\input{camera-controls.pdf_tex}
+		\caption{Camera Controls}
+		\label{fig:cc1}
+	\end{figure}
+	\column{0.5\textwidth}
+	Cameras are in manual mode because of difficult lighting situation.
+	\begin{description}
+		\item[Left Ring] Focus - control sharpness of the image.
+		\item[Middle Ring] Zoom - vary the focal length.
+		\item[Right Ring] Iris - don't touch.
+     \end{description}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Tripod Handle Controls}
+	\begin{columns}[T,onlytextwidth]
+	\column{0.5\textwidth}
+	\begin{figure} 
+		\centering
+		\includegraphics[width=0.7\textwidth]{tripod-handle.jpeg}
+		\caption{Tripod Handle}
+		\label{fig:th1}
+	\end{figure}
+
+	\column{0.5\textwidth}
+	Beware: various models in use.
+	\begin{description}
+		\item[Zoom Control] lever above red ring
+		\item[Red Button] Start/stop recording, don't touch
+		\item[Other Buttons] markings on the handle
+    \end{description}
+	\metroset{block=fill}
+	\begin{alertblock}{Alert}
+		    Saal 1 and Saal 2 have old tele zoom lenses. Left handle Focus. Right handle Zoom.
+	\end{alertblock}
+
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Tripod}
+	\begin{columns}[T,onlytextwidth]
+	\column{0.4\textwidth}
+	\begin{figure} 
+		\centering
+		\includegraphics[width=0.9\textwidth]{tripod-complete.png}
+		\caption{Tripod}
+		\label{fig:tp1}
+	\end{figure}
+	
+	\column{0.6\textwidth}
+	\begin{itemize}
+			\item Should be level - check the water bubble.
+			\item Variable brakes - can be adjusted to your needs.
+			\item Tilt axis should be balanced, so that the camera doesn't tilt up or down on its own.
+			\item Pan axis is needed all of the time. Set it so you can do smooth pans all over the stage.
+		\end{itemize}
+		\metroset{block=fill}
+		\begin{alertblock}{Alert}
+			Alert the A/V-Technician if something's wrong or misplaced.
+		\end{alertblock}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{SD-Card Recording}
+		\begin{itemize}
+			\item Two SD-Cards in one camera each room
+			\item Backup Recording
+			\item Turn on Recording before first shift in the morning -> Red Dot somewhere in the Display.
+			\item Control Recording Time remaining. 
+		\end{itemize}
+		\metroset{block=fill}
+		\begin{alertblock}{Alert}
+			Alert the A/V-Technichian if something's wrong or not running.
+		\end{alertblock}
+\end{frame}
+
+\section{Camera Positions and Angles}
+\begin{frame}{Map Saal 1 + Saal 2}
+	\begin{figure} 
+		\centering
+		\includegraphics[height=0.9\textheight]{1-2-base-cameras.png}
+		\label{fig:map1}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Map Saal G}
+	\begin{figure} 
+		\centering
+		\includegraphics[height=0.9\textheight]{g-base-cameras.png}
+		\label{fig:mapg1}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Map Saal 6}
+	\begin{figure} 
+		\centering
+		\includegraphics[height=0.9\textheight]{6-base-cameras.png}
+		\label{fig:map61}
+	\end{figure}
+\end{frame}
+
+\section{Camera 1 - Closeup Camera}
+\begin{frame}{Camera 1 - Closeup Camera}
+		\begin{block}{Content}
+			\begin{itemize}
+				\item The Speaker is your best friend \\
+				\item Keep them always in frame.
+			\end{itemize}
+		\end{block}
+		
+		\begin{block}{Framing}
+			\begin{itemize}
+				\item The upper part of their body + head + a bit of headroom. \\
+				\item Stay close to his/her eyeline on the upper third line.
+			\end{itemize}
+		\end{block}
+
+		\begin{alertblock}{Alerts}
+			\begin{itemize}
+				\item Anticipate movement. \\
+				\item Leave some room where they want to move next. \\
+				\item Needs lots of attention.
+			\end{itemize}
+		\end{alertblock}
+\end{frame}
+
+\begin{frame}{Camera 1 - Closeup Camera}
+	Example Shots I
+	\begin{figure} 
+		\centering
+		\includegraphics[width=0.7\textwidth]{closeup1.png}
+		\caption{Good Closeup Shot}
+		\label{fig:close1}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Camera 1 - Closeup Camera}
+	Example Shots II
+	\begin{figure} 
+		\centering
+		\includegraphics[width=0.7\textwidth]{closeup2.png}
+		\caption{Good Closeup in Supersource}
+		\label{fig:close2}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Camera 1 - Closeup Camera}
+	Bad Shots I
+	\begin{figure} 
+		\centering
+		\includegraphics[width=0.7\textwidth]{closeup-bad1.png}
+		\caption{Half a head - not good.}
+		\label{fig:closeb1}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Camera 1 - Closeup Camera}
+	Bad Shots II
+	\begin{figure} 
+		\centering
+		\includegraphics[width=0.7\textwidth]{closeup-bad2.png}
+		\caption{Too Far out for a good supersource image.}
+		\label{fig:closeb2}
+	\end{figure}
+\end{frame}
+
+
+\section{Camera 2 - Medium Camera}
+\begin{frame}{Camera 2 - Medium Camera}
+		\begin{block}{Content}
+			\begin{itemize}
+				\item Context around the speaker \\
+				\item If there are two or more speakers choose the other one - \textbf{COMMUNICATE}
+			\end{itemize}
+		\end{block}
+		
+		\begin{block}{Framing}
+			\begin{itemize}
+				\item Speaker from Head to Toes \\
+				\item Stay close to his/her eyeline on the upper third line.
+			\end{itemize}
+		\end{block}
+
+		\begin{alertblock}{Alerts}
+			\begin{itemize}
+				\item Anticipate movement. \\
+				\item Leave some room where they want to move next. \\
+				\item Fallback Camera if the Closeup Camera can't keep up.
+			\end{itemize}
+		\end{alertblock}
+\end{frame}
+
+\begin{frame}{Camera 2 - Medium Camera}
+	\textbf{Good Shots I}
+	\begin{figure} 
+		\centering
+		\includegraphics[width=0.7\textwidth]{medium1.png}
+		\caption{Good Context image.}
+		\label{fig:medium1}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Camera 2 - Medium Camera}
+	\textbf{Good Shots II}
+	\begin{figure} 
+		\centering
+		\includegraphics[width=0.7\textwidth]{medium2.png}
+		\caption{Two Speakers.}
+		\label{fig:medium2}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Camera 2 - Medium Camera}
+	\textbf{Bad Shots I}
+	\begin{figure} 
+		\centering
+		\includegraphics[width=0.7\textwidth]{medium-bad1.png}
+		\caption{Too much audience.}
+		\label{fig:mediumb1}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Camera 2 - Medium Camera}
+	\textbf{Bad Shots II}
+	\begin{figure} 
+		\centering
+		\includegraphics[width=0.7\textwidth]{medium-bad2.png}
+		\caption{Too much audience.}
+		\label{fig:mediumb1}
+	\end{figure}
+\end{frame}
+
+\section{Camera 3 - Wide Shot}
+
+\begin{frame}{Camera 3 - Wide Shot}
+		\begin{block}{Content}
+			\begin{itemize}
+				\item Complete Lecture Hall in Saal 1 and 2 \\
+			\end{itemize}
+		\end{block}
+		
+		\begin{block}{Framing}
+			\begin{itemize}
+				\item Covers the whole stage.
+				\item A bit of small audience for context.
+				\item Statically set.
+			\end{itemize}
+		\end{block}
+
+		\begin{alertblock}{Alerts}
+			\begin{itemize}
+				\item Needs no attention. 
+				\item Fallback Camera if all else fails or standing ovations erupt.
+			\end{itemize}
+		\end{alertblock}
+\end{frame}
+
+\section{Video Mixer Tools}
+
+\begin{frame}{Dual Setup}
+	Two different Setups are in use at this congress. 
+	Both setups offer similar possibilities. 
+	You can work with both of them.
+
+	\begin{columns}[T,onlytextwidth]
+	\column{0.4\textwidth}
+		\metroset{block=fill}
+		\begin{exampleblock}{Hardware Video Mixer}
+			\begin{itemize}
+				\item Saal 1
+				\item Saal 2
+				\item Specialized Hardware Panel
+			\end{itemize}
+		\end{exampleblock}
+
+	\column{0.4\textwidth}
+		\metroset{block=fill}
+		\begin{exampleblock}{Software Video Mixer}
+			\begin{itemize}
+				\item Saal G
+				\item Saal 6
+				\item Sendezentrum
+				\item Laptop as control surface.
+			\end{itemize}
+		\end{exampleblock}
+	\end{columns}
+
+\end{frame}
+
+\begin{frame}{Hardware Video - Mixer Controls}
+	\begin{columns}[T,onlytextwidth]
+	\column{0.5\textwidth}
+	\begin{figure} 
+		\centering
+		\def\svgwidth{0.9\textwidth}
+		\input{atem-control-panel.pdf_tex}
+		\caption{ATEM 1M/E Panel}
+		\label{fig:1me1}
+	\end{figure}
+	\column{0.5\textwidth}
+	\begin{description}
+		\item[Preview PRV Select] Green row, lower left 
+		\item[Program PGM Select] Red row above green row.
+		\item[Cut Button] Swap selections of PRV and PGM Rows.
+		\item[Crossfade Bar] Smooth transition between PRV and PGM.
+     \end{description}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Hardware Video Mixer - Screen Layout}
+	\begin{columns}[T,onlytextwidth]
+	\column{0.5\textwidth}
+	\begin{figure} 
+		\centering
+		\includegraphics[width=0.7\textwidth]{atem-multiview.png}
+		\caption{ATEM Multi View}
+		\label{fig:atem2}
+	\end{figure}
+
+	\column{0.5\textwidth}
+	\begin{description}
+		\item[Top Left] Preview, your preview to check feeds before going live 
+		\item[Top Right] Program, what everyone on the internet sees.
+		\item[Bottom two Rows] Up to eight video Feeds.
+     \end{description}
+	\end{columns}
+\end{frame}
+
+
+\begin{frame}{Software Video Mixer - Controls}
+	\begin{columns}[T,onlytextwidth]
+	\column{0.5\textwidth}
+	\begin{figure} 
+		\centering
+		\includegraphics[width=1\textwidth]{voctomix.png}
+		\caption{Voctogui}
+		\label{fig:voctogui1}
+	\end{figure}
+
+	\column{0.5\textwidth}
+	\begin{description}
+		\item[Previews] Small images on the left 
+		\item[Program] Large, middle, what everyone on the internet sees.
+		\item[Composition] Top row.
+		\item[Blue] Select A
+		\item[Red] Select B
+		\item[Stream Blank] For breaks when nothing should be streamed.
+     \end{description}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Software Video Mixer - Voctogui}
+	\begin{figure} 
+		\centering
+		\includegraphics[width=.9\textwidth]{voctomix.png}
+		\caption{Voctogui}
+		\label{fig:voctogui2}
+	\end{figure}
+\end{frame}
+
+\section{Video Mixing Guidelines}
+\begin{frame}{Mixing Guidelines - Hard Rules}
+	\begin{itemize}
+		\item \textbf{All} you are doing is \textbf{recorded} and will be published. \alert{\textbf{Don't make mistakes.}}
+		\item The Audience is \textbf{not to be filmed}. Cut away if faces of people not on the stage appear.
+		\item \textbf{Slides are important}
+		\item Slides stay on till the text has been read \textbf{twice}.
+		\item Show new slides \textbf{immediately}.
+	\end{itemize}
+	\begin{exampleblock}{Hint}
+		Fast-paced presentations with lots of slides are easier to handle with the supersource.
+	\end{exampleblock}
+\end{frame}
+
+
+\begin{frame}{Mixing Guidelines - Softer Hints}
+	\begin{itemize}
+		\item Start early – opening announcements of the Herald are a good start. Their introduction has to be in the recording and on stream.
+		\item Open wide – Structure the beginning of a talk with shots that set the stage
+		\item The slides in fullscreen – you’re dealing with a very small screen. Text has to be readable
+		\item Show gestures – medium-close-up that follows the speakers eye-line
+		\item Don’t be too cutty – Pace your videos temperately. Do not cut too often.
+		\item Don't end too early – All questions and answers have to be recorded. The herald ends the talk, not the mixer angel.
+	\end{itemize}
+	\begin{exampleblock}{Hints}
+		Leave lots of room at the start and end of a talk. 
+		Cut away from the infobeamer before the Herald starts with announcements. 
+		Cut to the infobeamer only after the last applause has finished.
+	\end{exampleblock}
+\end{frame}
+
+\begin{frame}{Mixing Guidelines - Communication}
+	\begin{itemize}
+		\item Communication is key
+		\item Partyline intercom in every room
+		\item Mixer Angel requests pictures from Camera Angels and announcs their next steps
+		\item Camera angels offer good pictures
+		\item Work together, say what you want to do and what doesn't work.
+	\end{itemize}
+\end{frame}
+
+\section{Timeline of a Talk}
+
+\begin{frame}{Timeline of a typical talk}
+	\begin{enumerate}
+		\item Preparations beforehand
+		\item Announcements and Introduction
+		\item Content
+		\item Questions and Answers
+		\item Ending
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{Timeline - Preparations beforehand}
+	\begin{block}{Cameras}
+		\begin{itemize}
+			\item Get to know your fellow angels.
+			\item Test the intercom.
+			\item Test your camera and settings.
+			\item Look on Stage who will be Herald ans Speaker.
+			\item Camera 1: Get a closeup of the speaker.
+			\item Camera 2: Get a head to toes shot of the herald.
+			\item Both cameras start tracking their persons.
+		\end{itemize}
+	\end{block}
+	\begin{block}{Mixer}
+		\begin{itemize}
+			\item Check Slides and adjust supersource to 16:9 or 4:3.
+			\item Have Camera 2 on Preview.
+			\item Talk to your cameras via the intercom.
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Timeline - Announcements and Introduction}
+	\begin{block}{Cameras}
+		\begin{itemize}
+			\item Camera 1: Get a closeup of the speaker.
+			\item Camera 2: Get a head to toes shot of the herald.
+			\item Both cameras track their persons.
+		\end{itemize}
+	\end{block}
+	
+	\begin{block}{Mixer}
+		\begin{enumerate}
+			\item Go live with Camera 2 as soon as the Herald starts.
+			\item Title slide can be shown during the introduction 
+			\item Put Camera 1 on Preview.
+			\item Camera 1 live as soon as the Speaker starts talking
+		\end{enumerate}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Timeline - Content}
+	\begin{block}{Cameras}
+		\begin{itemize}
+			\item Follow commands from the Mixer
+			\item Ask for time off if you have to readjust zoom, focus or anything else that should noc be in the recording.
+		\end{itemize}
+	\end{block}
+	
+	\begin{block}{Mixer}
+		\begin{itemize}
+			\item Show new slides as soon as they are keyed by the Speaker 
+			\item Show Camera 2 when the Speaker starts walking and gesturing
+			\item Call out your actions and intentions via intercom
+			\item Plan ahead. Which picture should be shown in 30 seconds?
+			\item Keep your available pictures diverse. Both cameras on medium closeup don't make sense.
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Timeline - Questions and Answers}
+	\begin{block}{Cameras}
+		\begin{itemize}
+			\item Camera 1: Track the Speaker
+			\item Camera 2: Track the Herald or both if they are close
+			\item Keep tracking, don't give up even if your shift ends soon.
+		\end{itemize}
+	\end{block}
+	
+	\begin{block}{Mixer}
+		\begin{itemize}
+			\item Show whoever is talking on stage to the stream.
+			\item The "Thanks"-Slide can be shown from time to time.
+			\item Don't end too early.
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+
+\begin{frame}{Questions?}
+Contact me on congress via irc, voc-lounge on hackint.
+\end{frame}
+
+\end{document}
+
+
+%%% End
