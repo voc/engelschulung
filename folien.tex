@@ -53,67 +53,13 @@
 \usepackage{xspace}
 
 
-%%%
-%%% PDF
-%%%
-
-\usepackage{ifpdf}
-
-%%% Should be LAST usepackage-call!
-%%% For docu on that, see reference on package `hyperref''
-\ifpdf%   (definitions for using pdflatex instead of latex)
-
-%%% graphicx: support for graphics
-%\usepackage[pdftex]{graphicx}
-
-\pdfcompresslevel=9
-
-%%% hyperref (hyperlinks in PDF): for more options or more detailed
-%%%          explanations, see the documentation of the hyperref-package
-\usepackage[%
-%%% general options
-pdftex=true,      %% sets up hyperref for use with the pdftex program
-%plainpages=false, %% set it to false, if pdflatex complains: `destination with same identifier already exists''
-%
-%%% extension options
-backref,      %% adds a backlink text to the end of each item in the bibliography
-pagebackref=false, %% if true, creates backward references as a list of page numbers in the bibliography
-colorlinks=true,   %% turn on colored links (true is better for on-screen reading, false is better for printout versions)
-%
-%%% PDF-specific display options
-bookmarks=true,          %% if true, generate PDF bookmarks (requires two passes of pdflatex)
-bookmarksopen=false,     %% if true, show all PDF bookmarks expanded
-bookmarksnumbered=false, %% if true, add the section numbers to the bookmarks
-%pdfstartpage={1},        %% determines, on which page the PDF file is opened
-pdfpagemode=None         %% None, UseOutlines (=show bookmarks), UseThumbs (show thumbnails), FullScreen
-]{hyperref}
-
-
-%%% provide all graphics (also) in this format, so you don't have
-%%% to add the file extensions to the \includegraphics-command
-%%% and/or you don't have to distinguish between generating
-%%% dvi/ps (through latex) and pdf (through pdflatex)
-\DeclareGraphicsExtensions{.pdf}
-
-\else %else   (definitions for using latex instead of pdflatex)
-
-\usepackage[dvips]{graphicx}
-
-\DeclareGraphicsExtensions{.eps}
-
-\usepackage[%
-dvips,           %% sets up hyperref for use with the dvips driver
-colorlinks=false %% better for printout version; almost every hyperref-extension is eliminated by using dvips
-]{hyperref}
-
-\fi
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Title stuff
 
 \title{Angel Introduction: Camera and Video Mixer}
-\date{\today \currenttime}
+%\date{\today \currenttime}
 \author{sophie}
 \institute{C3VOC}
 
@@ -151,45 +97,8 @@ colorlinks=false %% better for printout version; almost every hyperref-extension
 %%%
 %%% begin main document
 
-
-
 %notes
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%TODO
-
-%witchtige slides rausziehen
-
-%verlinkung erstellen
-%
-
-%wo
-%was
-%allgemeine begriffe
-
-%wichtige folien an mischer/kameraplätze legen
-
-
-
-% Begriffsdefinition
-% Western Style nicht 
-
-% Konvention weit hinten
-
-%%%%%%%%%%%%%%%%%%%%%%%%
-% erweiterungen
-%-----------------------
-
-
-
-
-% Verbesserungen
-% Voctogui in groß
-% streambeobachter als mischerengel 
-% Bildregie als Kommunikationstraining
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Slides
@@ -213,14 +122,13 @@ colorlinks=false %% better for printout version; almost every hyperref-extension
 		\item Introduction Meeting here
 		\item Complete overview for all new angels
 		\item Short diff for experienced ones
-		\item Shift distribution every day 15:00 to 16:00 in Hall 6.
+		\item Shift distribution every day 17:00 in CCL 11.
 		\item Feedback loop and review at those meetings
 		\item Slides available online: \texttt{https://streaming.selfnet.de/engelschulung.pdf}
 	\end{itemize}
 	\begin{figure} 
 		\centering
 		\includegraphics[height=0.4\textheight]{images/qrcode.png}
-		\label{fig:qr1}
 	\end{figure}
 \end{frame}
 
@@ -279,22 +187,21 @@ colorlinks=false %% better for printout version; almost every hyperref-extension
 \section{Camera Hardware}
 \begin{frame}{Hardware Camera Controls}
 	\begin{columns}[T,onlytextwidth]
-	\column{0.5\textwidth}
-	\begin{figure} 
-		\centering
-		\def\svgwidth{0.9\textwidth}
-		\import{images}{camera-controls.pdf.tex}
-		\caption{Camera Controls}
-		\label{fig:cc1}
-	\end{figure}
-	\column{0.5\textwidth}
-	Cameras are in manual mode because of difficult lighting situation.
-	\begin{description}
-		\item[Left Ring] Focus - control sharpness of the image.
-		\item[Middle Ring] Zoom - vary the focal length.
-		\item[Right Ring] Iris - don't touch.
-     \end{description}
-\end{columns}
+		\column{0.5\textwidth}
+		\begin{figure} 
+			\centering
+			%\def\svgwidth{0.9\textwidth}
+			%\import{images}{camera-controls.pdf.tex}
+			\caption{Camera Controls}
+		\end{figure}
+		\column{0.5\textwidth}
+		Cameras are in manual mode because of difficult lighting situation.
+		\begin{description}
+			\item[Left Ring] Focus - control sharpness of the image.
+			\item[Middle Ring] Zoom - vary the focal length.
+			\item[Right Ring] Iris - don't touch.
+		\end{description}
+	\end{columns}
 \end{frame}
 
 \begin{frame}{Tripod Handle Controls}
@@ -304,7 +211,6 @@ colorlinks=false %% better for printout version; almost every hyperref-extension
 		\centering
 		\includegraphics[width=0.7\textwidth]{images/tripod-handle.jpeg}
 		\caption{Tripod Handle}
-		\label{fig:th1}
 	\end{figure}
 
 	\column{0.5\textwidth}
@@ -329,7 +235,6 @@ colorlinks=false %% better for printout version; almost every hyperref-extension
 		\centering
 		\includegraphics[width=0.9\textwidth]{images/tripod-complete.png}
 		\caption{Tripod}
-		\label{fig:tp1}
 	\end{figure}
 	
 	\column{0.6\textwidth}
@@ -364,7 +269,6 @@ colorlinks=false %% better for printout version; almost every hyperref-extension
 	\begin{figure} 
 		\centering
 		\includegraphics[height=0.9\textheight]{images/1-2-base-cameras.png}
-		\label{fig:map1}
 	\end{figure}
 \end{frame}
 
@@ -372,7 +276,6 @@ colorlinks=false %% better for printout version; almost every hyperref-extension
 	\begin{figure} 
 		\centering
 		\includegraphics[height=0.9\textheight]{images/g-base-cameras.png}
-		\label{fig:mapg1}
 	\end{figure}
 \end{frame}
 
@@ -380,7 +283,6 @@ colorlinks=false %% better for printout version; almost every hyperref-extension
 	\begin{figure} 
 		\centering
 		\includegraphics[height=0.9\textheight]{images/6-base-cameras.png}
-		\label{fig:map61}
 	\end{figure}
 \end{frame}
 
@@ -415,7 +317,6 @@ colorlinks=false %% better for printout version; almost every hyperref-extension
 		\centering
 		\includegraphics[width=0.7\textwidth]{images/closeup1.jpg}
 		\caption{Good Closeup Shot}
-		\label{fig:close1}
 	\end{figure}
 \end{frame}
 
@@ -425,7 +326,6 @@ colorlinks=false %% better for printout version; almost every hyperref-extension
 		\centering
 		\includegraphics[width=0.7\textwidth]{images/closeup2.jpg}
 		\caption{Good Closeup in Supersource}
-		\label{fig:close2}
 	\end{figure}
 \end{frame}
 
@@ -435,7 +335,6 @@ colorlinks=false %% better for printout version; almost every hyperref-extension
 		\centering
 		\includegraphics[width=0.7\textwidth]{images/closeup-bad1.png}
 		\caption{Half a head - not good.}
-		\label{fig:closeb1}
 	\end{figure}
 \end{frame}
 
@@ -445,7 +344,6 @@ colorlinks=false %% better for printout version; almost every hyperref-extension
 		\centering
 		\includegraphics[width=0.7\textwidth]{images/closeup-bad2.png}
 		\caption{Too Far out for a good supersource image.}
-		\label{fig:closeb2}
 	\end{figure}
 \end{frame}
 
@@ -481,7 +379,6 @@ colorlinks=false %% better for printout version; almost every hyperref-extension
 		\centering
 		\includegraphics[width=0.7\textwidth]{images/medium1.png}
 		\caption{Good Context image.}
-		\label{fig:medium1}
 	\end{figure}
 \end{frame}
 
@@ -491,7 +388,6 @@ colorlinks=false %% better for printout version; almost every hyperref-extension
 		\centering
 		\includegraphics[width=0.7\textwidth]{images/medium2.png}
 		\caption{Two Speakers.}
-		\label{fig:medium2}
 	\end{figure}
 \end{frame}
 
@@ -501,7 +397,6 @@ colorlinks=false %% better for printout version; almost every hyperref-extension
 		\centering
 		\includegraphics[width=0.7\textwidth]{images/medium-bad1.png}
 		\caption{Too much audience.}
-		\label{fig:mediumb1}
 	\end{figure}
 \end{frame}
 
@@ -511,7 +406,6 @@ colorlinks=false %% better for printout version; almost every hyperref-extension
 		\centering
 		\includegraphics[width=0.7\textwidth]{images/medium-bad2.png}
 		\caption{Too much audience.}
-		\label{fig:mediumb1}
 	\end{figure}
 \end{frame}
 
@@ -572,46 +466,6 @@ colorlinks=false %% better for printout version; almost every hyperref-extension
 
 \end{frame}
 
-\begin{frame}{Hardware Video - Mixer Controls}
-	\begin{columns}[T,onlytextwidth]
-	\column{0.5\textwidth}
-	\begin{figure} 
-		\centering
-		\def\svgwidth{0.9\textwidth}
-		\import{images}{atem-control-panel.pdf.tex"}
-		\caption{ATEM 1M/E Panel}
-		\label{fig:1me1}
-	\end{figure}
-	\column{0.5\textwidth}
-	\begin{description}
-		\item[Preview PRV Select] Green row, lower left 
-		\item[Program PGM Select] Red row above green row.
-		\item[Cut Button] Swap selections of PRV and PGM Rows.
-		\item[Crossfade Bar] Smooth transition between PRV and PGM.
-     \end{description}
-	\end{columns}
-\end{frame}
-
-\begin{frame}{Hardware Video Mixer - Screen Layout}
-	\begin{columns}[T,onlytextwidth]
-	\column{0.5\textwidth}
-	\begin{figure} 
-		\centering
-		\includegraphics[width=0.7\textwidth]{images/atem-multiview.png}
-		\caption{ATEM Multi View}
-		\label{fig:atem2}
-	\end{figure}
-
-	\column{0.5\textwidth}
-	\begin{description}
-		\item[Top Left] Preview, your preview to check feeds before going live 
-		\item[Top Right] Program, what everyone on the internet sees.
-		\item[Bottom two Rows] Up to eight video Feeds.
-     \end{description}
-	\end{columns}
-\end{frame}
-
-
 \begin{frame}{Software Video Mixer - Controls}
 	\begin{columns}[T,onlytextwidth]
 	\column{0.5\textwidth}
@@ -639,7 +493,6 @@ colorlinks=false %% better for printout version; almost every hyperref-extension
 		\centering
 		\includegraphics[width=.9\textwidth]{images/voctomix.png}
 		\caption{Voctogui}
-		\label{fig:voctogui2}
 	\end{figure}
 \end{frame}
 
