@@ -11,7 +11,7 @@
 %%%
 
 %%% ngerman: language set to new-german
-%\usepackage{nenglish}
+\usepackage[english]{babel}
 
 %%% babel: language set (can cause some conflicts with package ngerman)
 %%%        use it only for multi-language documents or non-german ones
@@ -60,7 +60,7 @@
 
 \title{Angel Introduction: Camera and Video Mixer}
 %\date{\today \currenttime}
-\author{sophie}
+\author{sophie,jwacalex, capo, frederik}
 \institute{C3VOC}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -148,7 +148,7 @@
 		\item Operate the fixed cameras in the lecture halls. 
 		\item Usually, two video angels per lecture hall 
 		\item Camera angels will communicate with the Video-Mixer-Angel via intercom,
-		\item Get instrucions to shoot in certain ways. 
+		\item Get instructions to shoot in certain ways. 
 		\item Maintain good camera settings 
 	\end{itemize}
 \end{frame}
@@ -288,47 +288,47 @@
 \end{frame}
 
 \section{Camera Positions and Angles}
-\begin{frame}{Map Saal 1 + Saal 2}
+\begin{frame}{Map of the fair grounds}
 	\begin{figure} 
 		\centering
-		\includegraphics[height=0.9\textheight]{images/1-2-base-cameras.png}
+		\includegraphics[height=0.9\textheight]{images/planmessegelaende_rotelinien.png}
 	\end{figure}
 \end{frame}
 
-\begin{frame}{Map Saal G}
+\begin{frame}{Rooms in CCL}
 	\begin{figure} 
 		\centering
-		\includegraphics[height=0.9\textheight]{images/g-base-cameras.png}
+		\includegraphics[height=0.9\textheight]{images/congress_center_leipzig_querschnitt.jpg}
 	\end{figure}
 \end{frame}
 
-\begin{frame}{Map Saal 6}
+\begin{frame}{Saal Borg}
 	\begin{figure} 
 		\centering
-		\includegraphics[height=0.9\textheight]{images/6-base-cameras.png}
+		\includegraphics[height=0.9\textheight]{images/SaalB.png}
 	\end{figure}
 \end{frame}
 
-\section{Camera 1 - Closeup Camera}
 \begin{frame}{Camera 1 - Closeup Camera}
 		\begin{block}{Content}
 			\begin{itemize}
-				\item The Speaker is your best friend \\
-				\item Keep them always in frame.
+				\item The Speaker is your best friend
+				\item Keep them always in frame
+				\item Default for all composition modes
 			\end{itemize}
 		\end{block}
 		
 		\begin{block}{Framing}
 			\begin{itemize}
-				\item The upper part of their body + head + a bit of headroom. \\
+				\item The upper part of their body + head + a bit of headroom.
 				\item Stay close to his/her eyeline on the upper third line.
 			\end{itemize}
 		\end{block}
 
 		\begin{alertblock}{Alerts}
 			\begin{itemize}
-				\item Anticipate movement. \\
-				\item Leave some room where they want to move next. \\
+				\item Anticipate movement. 
+				\item Leave some room where they want to move next.
 				\item Needs lots of attention.
 			\end{itemize}
 		\end{alertblock}
@@ -371,26 +371,25 @@
 \end{frame}
 
 
-\section{Camera 2 - Medium Camera}
 \begin{frame}{Camera 2 - Medium Camera}
 		\begin{block}{Content}
 			\begin{itemize}
-				\item Context around the speaker \\
-				\item If there are two or more speakers choose the other one - \textbf{COMMUNICATE}
+				\item Context around the speaker
+				\item If there are two or more speakers choose the other one
 			\end{itemize}
 		\end{block}
 		
 		\begin{block}{Framing}
 			\begin{itemize}
-				\item Speaker from Head to Toes \\
+				\item Speaker from Head to Toes
 				\item Stay close to his/her eyeline on the upper third line.
 			\end{itemize}
 		\end{block}
 
 		\begin{alertblock}{Alerts}
 			\begin{itemize}
-				\item Anticipate movement. \\
-				\item Leave some room where they want to move next. \\
+				\item Anticipate movement.
+				\item Leave some room where they want to move next.
 				\item Fallback Camera if the Closeup Camera can't keep up.
 			\end{itemize}
 		\end{alertblock}
@@ -414,33 +413,7 @@
 	\end{figure}
 \end{frame}
 
-\begin{frame}{Camera 2 - Medium Camera}
-	\textbf{Bad Shots I}
-	\begin{figure} 
-		\centering
-		\includegraphics[width=0.7\textwidth]{images/medium-bad1.png}
-		\caption{Too much audience.}
-	\end{figure}
-\end{frame}
-
-\begin{frame}{Camera 2 - Medium Camera}
-	\textbf{Bad Shots II}
-	\begin{figure} 
-		\centering
-		\includegraphics[width=0.7\textwidth]{images/medium-bad2.png}
-		\caption{Too much audience.}
-	\end{figure}
-\end{frame}
-
-\section{Camera 3 - Wide Shot}
-
 \begin{frame}{Camera 3 - Wide Shot}
-		\begin{block}{Content}
-			\begin{itemize}
-				\item Complete Lecture Hall in Saal 1 and 2 \\
-			\end{itemize}
-		\end{block}
-		
 		\begin{block}{Framing}
 			\begin{itemize}
 				\item Covers the whole stage.
@@ -452,44 +425,22 @@
 		\begin{alertblock}{Alerts}
 			\begin{itemize}
 				\item Needs no attention. 
-				\item Fallback Camera if all else fails or standing ovations erupt.
+				\item Fallback Camera if all else fails 
+				\item Beautifully captures standing ovations
 			\end{itemize}
 		\end{alertblock}
 \end{frame}
 
-\section{Video Mixer Tools}
-
-\begin{frame}{Dual Setup}
-	Two different Setups are in use at this congress. 
-	Both setups offer similar possibilities. 
-	You can work with both of them.
-
-	\begin{columns}[T,onlytextwidth]
-	\column{0.4\textwidth}
-		\metroset{block=fill}
-		\begin{exampleblock}{Hardware Video Mixer}
-			\begin{itemize}
-				\item Saal 1
-				\item Saal 2
-				\item Specialized Hardware Panel
-			\end{itemize}
-		\end{exampleblock}
-
-	\column{0.4\textwidth}
-		\metroset{block=fill}
-		\begin{exampleblock}{Software Video Mixer}
-			\begin{itemize}
-				\item Saal G
-				\item Saal 6
-				\item Sendezentrum
-				\item Laptop as control surface.
-			\end{itemize}
-		\end{exampleblock}
-	\end{columns}
-
+\begin{frame}{Camera 3 - Wide Shot}
+	\begin{figure} 
+		\centering
+		\includegraphics[width=0.7\textwidth]{images/wide-shot.jpeg}
+	\end{figure}
 \end{frame}
 
-\begin{frame}{Software Video Mixer - Controls}
+\section{Video Mixer Tools}
+
+\begin{frame}{Voctomix}
 	\begin{columns}[T,onlytextwidth]
 	\column{0.5\textwidth}
 	\begin{figure} 
@@ -560,7 +511,7 @@
 	\end{itemize}
 \end{frame}
 
-\section{Timeline of a Talk}
+\section{Live Action Role Play}
 
 \begin{frame}{Timeline of a typical talk}
 	\begin{enumerate}
@@ -572,85 +523,84 @@
 	\end{enumerate}
 \end{frame}
 
-\begin{frame}{Timeline - Preparations beforehand}
-	\begin{block}{Cameras}
-		\begin{itemize}
-			\item Get to know your fellow angels.
-			\item Test the intercom.
-			\item Test your camera and settings.
-			\item Look on Stage who will be Herald ans Speaker.
-			\item Camera 1: Get a closeup of the speaker.
-			\item Camera 2: Get a head to toes shot of the herald.
-			\item Both cameras start tracking their persons.
-		\end{itemize}
-	\end{block}
-	\begin{block}{Mixer}
-		\begin{itemize}
-			\item Check Slides and adjust supersource to 16:9 or 4:3.
-			\item Have Camera 2 on Preview.
-			\item Talk to your cameras via the intercom.
-		\end{itemize}
-	\end{block}
-\end{frame}
-
-\begin{frame}{Timeline - Announcements and Introduction}
-	\begin{block}{Cameras}
-		\begin{itemize}
-			\item Camera 1: Get a closeup of the speaker.
-			\item Camera 2: Get a head to toes shot of the herald.
-			\item Both cameras track their persons.
-		\end{itemize}
-	\end{block}
-	
-	\begin{block}{Mixer}
-		\begin{enumerate}
-			\item Go live with Camera 2 as soon as the Herald starts.
-			\item Title slide can be shown during the introduction 
-			\item Put Camera 1 on Preview.
-			\item Camera 1 live as soon as the Speaker starts talking
-		\end{enumerate}
-	\end{block}
-\end{frame}
-
-\begin{frame}{Timeline - Content}
-	\begin{block}{Cameras}
-		\begin{itemize}
-			\item Follow commands from the Mixer
-			\item Ask for time off if you have to readjust zoom, focus or anything else that should noc be in the recording.
-		\end{itemize}
-	\end{block}
-	
-	\begin{block}{Mixer}
-		\begin{itemize}
-			\item Show new slides as soon as they are keyed by the Speaker 
-			\item Show Camera 2 when the Speaker starts walking and gesturing
-			\item Call out your actions and intentions via intercom
-			\item Plan ahead. Which picture should be shown in 30 seconds?
-			\item Keep your available pictures diverse. Both cameras on medium closeup don't make sense.
-		\end{itemize}
-	\end{block}
-\end{frame}
-
-\begin{frame}{Timeline - Questions and Answers}
-	\begin{block}{Cameras}
-		\begin{itemize}
-			\item Camera 1: Track the Speaker
-			\item Camera 2: Track the Herald or both if they are close
-			\item Keep tracking, don't give up even if your shift ends soon.
-		\end{itemize}
-	\end{block}
-	
-	\begin{block}{Mixer}
-		\begin{itemize}
-			\item Show whoever is talking on stage to the stream.
-			\item The "Thanks"-Slide can be shown from time to time.
-			\item Don't end too early.
-		\end{itemize}
-	\end{block}
-\end{frame}
+%\begin{frame}{Timeline - Preparations beforehand}
+%	\begin{block}{Cameras}
+%		\begin{itemize}
+%			\item Get to know your fellow angels.
+%			\item Test the intercom.
+%			\item Test your camera and settings.
+%			\item Look on Stage who will be herald or speaker.
+%			\item Camera 1: Get a closeup of the speaker.
+%			\item Camera 2: Get a head to toes shot of the herald.
+%			\item Both cameras start tracking their persons.
+%		\end{itemize}
+%	\end{block}
+%	\begin{block}{Mixer}
+%		\begin{itemize}
+%			\item Check Slides and adjust supersource to 16:9 or 4:3.
+%			\item Have Camera 2 on Preview.
+%			\item Talk to your cameras via the intercom.
+%		\end{itemize}
+%	\end{block}
+%\end{frame}
+%
+%\begin{frame}{Timeline - Announcements and Introduction}
+%	\begin{block}{Cameras}
+%		\begin{itemize}
+%			\item Camera 1: Get a closeup of the speaker.
+%			\item Camera 2: Get a head to toes shot of the herald.
+%			\item Both cameras track their persons.
+%		\end{itemize}
+%	\end{block}
+%	
+%	\begin{block}{Mixer}
+%		\begin{enumerate}
+%			\item Go live with Camera 2 as soon as the Herald starts.
+%			\item Title slide can be shown during the introduction 
+%			\item Put Camera 1 on Preview.
+%			\item Camera 1 live as soon as the Speaker starts talking
+%		\end{enumerate}
+%	\end{block}
+%\end{frame}
+%
+%\begin{frame}{Timeline - Content}
+%	\begin{block}{Cameras}
+%		\begin{itemize}
+%			\item Follow commands from the Mixer
+%			\item Ask for time off if you have to readjust zoom, focus or anything else that should not be in the recording.
+%		\end{itemize}
+%	\end{block}
+%	
+%	\begin{block}{Mixer}
+%		\begin{itemize}
+%			\item Show new slides as soon as they are keyed by the Speaker 
+%			\item Show Camera 2 when the Speaker starts walking and gesturing
+%			\item Call out your actions and intentions via intercom
+%			\item Plan ahead. Which picture should be shown in 30 seconds?
+%			\item Keep your available pictures diverse. Both cameras on medium closeup don't make sense.
+%		\end{itemize}
+%	\end{block}
+%\end{frame}
+%
+%\begin{frame}{Timeline - Questions and Answers}
+%	\begin{block}{Cameras}
+%		\begin{itemize}
+%			\item Camera 1: Track the Speaker
+%			\item Camera 2: Track the Herald or both if they are close
+%			\item Keep tracking, don't give up even if your shift ends soon.
+%		\end{itemize}
+%	\end{block}
+%	
+%	\begin{block}{Mixer}
+%		\begin{itemize}
+%			\item Show whoever is talking on stage to the stream.
+%			\item The "Thanks"-Slide can be shown from time to time.
+%			\item Don't end too early.
+%		\end{itemize}
+%	\end{block}
+%\end{frame}
 
 \section{Orga} 				% Alex
-\subsection{Meetings}
 \begin{frame}{Daily Meeting}
 \begin{itemize}
 	\item We meet in Lecture Room 11 on day 1, 2 and 3 at 5 pm \\
@@ -682,7 +632,7 @@
 \end{frame}
 % mündlich: 	\item Everyone should do at least one shift per day
 
-\subsection{Contacts}			% Alex
+\section{Contacts}			% Alex
 \begin{frame}{Who to Contact?}
 \begin{itemize}
 	\item Technical problem \textbf{in the hall} - A/V Technician on duty
