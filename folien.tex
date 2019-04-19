@@ -1,107 +1,34 @@
 \documentclass[aspectratio=169]{beamer}
-%\documentclass{beamer}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%
-%%% packages
-%%%
-
-%%%
-%%% encoding and language set
-%%%
-
-%%% ngerman: language set to new-german
-%\usepackage{nenglish}
-
-%%% babel: language set (can cause some conflicts with package ngerman)
-%%%        use it only for multi-language documents or non-german ones
-%\usepackage[ngerman]{babel}
-
-%%% inputenc: coding of german special characters
+\usepackage{polyglossia}    
+\setmainlanguage{english}
 \usepackage[utf8]{inputenc}
-
-%%% fontenc, ae, aecompl: coding of characters in PDF documents
 \usepackage[T1]{fontenc}
 \usepackage{ae,aecompl}
-
-%%%
-%%% technical packages
-%%%
-
-%%% amsmath, amssymb, amstext: support for mathematics ttt
-%\usepackage{amsmath,amssymb,amstext}
-
-%%% psfrag: replace PostScript fonts
 \usepackage{psfrag}
-
-%%% listings: include programming code
 \usepackage{listings}
 \usepackage{courier}
 \lstset{basicstyle=\footnotesize\ttfamily,breaklines=true}
-
-%%% units: technical units
 \usepackage{units}
-
-%%% tiefgestellte zahlen
-\usepackage{subscript}
-
-
 \usepackage[official]{eurosym}
-
 \usetheme{metropolis}           % Use metropolis theme
-
 \usepackage{xspace}
+\usepackage{qrcode}
 
 
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Title stuff
-
-\title{Angel Introduction: Camera and Video Mixer}
-%\date{\today \currenttime}
-\author{sophie}
+\title{Angel Introduction: A/V Bunny}
+\author{sophie \& jwacalex}
 \institute{C3VOC}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%
-%%% begin document
-%%%
 
 \begin{document}
 
-%\pagenumbering{roman} %% small roman page numbers
-
-%%% include the title
-% \thispagestyle{empty}  %% no header/footer (only) on this page
 \maketitle
 
-%%% start a new page and display the table of contents
+
 \begin{frame}{Inhalt}
 \tableofcontents
 \end{frame}
-%%% start a new page and display the list of figures
-% \newpage
-% \listoffigures
 
-%%% start a new page and display the list of tables
-% \newpage
-% \listoftables
-
-%%% display the main document on a new page 
-\newpage
-
-% \pagenumbering{arabic} %% normal page numbers (include it, if roman was used above)
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%
-%%% begin main document
-
-%notes
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Slides
 
 \section{General Info}
 \begin{frame}{General Info I}
@@ -124,11 +51,12 @@
 		\item Short diff for experienced ones
 		\item Shift distribution every day 17:00 in CCL 11.
 		\item Feedback loop and review at those meetings
-		\item Slides available online: \texttt{https://streaming.selfnet.de/engelschulung.pdf}
+		\item Slides available online: \texttt{https://github.com/jwacalex/engelschulung/blob/eh19/folien.pdf}
 	\end{itemize}
 	\begin{figure} 
 		\centering
-		\includegraphics[height=0.4\textheight]{images/qrcode.png}
+		\qrset{link, height=5cm}
+		\qrcode{https://github.com/jwacalex/engelschulung/blob/eh19/folien.pdf}
 	\end{figure}
 \end{frame}
 
@@ -649,34 +577,11 @@
 	\end{block}
 \end{frame}
 
-\section{Orga} 				% Alex
-\subsection{Meetings}
-\begin{frame}{Daily Meeting}
-\begin{itemize}
-	\item We meet in Lecture Room 11 on day 1, 2 and 3 at 5 pm \\
-	\renewcommand\UrlFont{\color{blue}\sffamily\textbf}
-	\url{https://events.ccc.de/congress/2018/wiki/index.php/Session:A/V_Angel_Meeting}
-	\item  \textbf{Mandatory} for \textbf{Video Mixing Angels}
-	\item  \textbf{Optional} for \textbf{other A/V Angels}
-	\item  Feedback and Shift Distribution
-\end{itemize} 
-\end{frame}
-
-
-\begin{frame}{Agenda}		% Alex
-\begin{itemize}
-	\item Announcements (5 mins)
-	\item Remarkable Examples (15 mins)
-	\item Short Feedback Round (10 mins)
-	\item Shift Distribution (30 - 40 mins)
-	\item Keep in mind that we will moderate the session to 
-\end{itemize} 
-\end{frame}
-
+\section{Orga} 		
 \begin{frame}{Shift Distribution}		% Alex
 \begin{itemize}
-	\item Video Mixer shifts will be distributed in this meeting
-	\item Select about three talks you want do have and be excellent to your fellow angels
+	\item Video Mixer shifts will be distributed in the angel system
+	\item Sign up to the shifts you want to take
 	\item Talks with special requirements might be handled by VOC
 \end{itemize} 
 \end{frame}
@@ -685,10 +590,8 @@
 \subsection{Contacts}			% Alex
 \begin{frame}{Who to Contact?}
 \begin{itemize}
-	\item Technical problem \textbf{in the hall} - A/V Technician on duty
-	\item General Questions regarding VOC - VOC Helpdesk \textbf{1600}
-	\item Organizational or social problems / Angels - jwacalex - DECT \textbf{5542}
-	\item Further training / Angels - Frederik DECT \textbf{1609}
+	\item General Issues - VOC \textbf{1600}
+	\item Organizational or social problems / Angels - jwacalex - DECT \textbf{5523}
 	\item General Angel Topics - Heaven - DECT \textbf{1023}
 	\item Unable to find right person for issue - VOC Helpdesk \textbf{1600}
 	\item We might need to call you. Please have your DECT (or UMTS) number in the Engelsystem! If you don't have a number yet, go to 
@@ -697,7 +600,7 @@
 \end{frame}
 
 \begin{frame}{Questions?}
-Contact us on congress via irc, voc-lounge on hackint.
+Contact us on EH19 via irc, voc-lounge on hackint.
 \end{frame}
 
 \end{document}
