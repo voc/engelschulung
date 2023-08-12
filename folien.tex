@@ -1,107 +1,41 @@
 \documentclass[aspectratio=169]{beamer}
-%\documentclass{beamer}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%
-%%% packages
-%%%
+\usetheme{metropolis}
 
-%%%
-%%% encoding and language set
-%%%
-
-%%% ngerman: language set to new-german
+% ENCODING AND LANGUAGE
 \usepackage[english]{babel}
 
-%%% babel: language set (can cause some conflicts with package ngerman)
-%%%        use it only for multi-language documents or non-german ones
-%\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}     % Universal encoding
+\usepackage[T1]{fontenc}        % Font encoding
 
-%%% inputenc: coding of german special characters
-\usepackage[utf8]{inputenc}
+% FONT
+\usepackage{courier}            % Courier as \ttdefault
+% \usepackage{psfrag}             % replace PostScript fonts
 
-%%% fontenc, ae, aecompl: coding of characters in PDF documents
-\usepackage[T1]{fontenc}
-\usepackage{ae,aecompl}
+% OTHER HELPERS AND SETTINGS
+% \usepackage{graphicx}           % Include graphics to document
+% \usepackage{amsmath,amssymb,amstext}  % support for mathematics ttt
 
-%%%
-%%% technical packages
-%%%
+% \usepackage{listings}           % code listings
+% \lstset{basicstyle=\footnotesize\ttfamily,breaklines=true}
 
-%%% amsmath, amssymb, amstext: support for mathematics ttt
-%\usepackage{amsmath,amssymb,amstext}
+% \usepackage{units}
+\usepackage{siunitx}            % SI-Unit support
 
-%%% psfrag: replace PostScript fonts
-\usepackage{psfrag}
-
-%%% listings: include programming code
-\usepackage{listings}
-\usepackage{courier}
-\lstset{basicstyle=\footnotesize\ttfamily,breaklines=true}
-
-%%% units: technical units
-\usepackage{units}
-
-%%% tiefgestellte zahlen
-\usepackage{subscript}
-
-
-\usepackage[official]{eurosym}
-
-\usetheme{metropolis}           % Use metropolis theme
-
-\usepackage{xspace}
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Title stuff
-
+% TITLE PAGE SETTINGS
 \title{Angel Introduction: Camera and Video Mixer}
-%\date{\today \currenttime}
-\author{sophie, jtbx, jwacalex}
-\institute{C3VOC@GPN21}
+% \date{\today \currenttime}
+\author{}
+\institute{C3VOC}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%
-%%% begin document
-%%%
-
+%% START OF DOCUMENT
 \begin{document}
-
-%\pagenumbering{roman} %% small roman page numbers
-
-%%% include the title
-% \thispagestyle{empty}  %% no header/footer (only) on this page
 \maketitle
 
-%%% start a new page and display the table of contents
 \begin{frame}{ToC}
-\tableofcontents
+	\tableofcontents
 \end{frame}
-%%% start a new page and display the list of figures
-% \newpage
-% \listoffigures
 
-%%% start a new page and display the list of tables
-% \newpage
-% \listoftables
-
-%%% display the main document on a new page 
-\newpage
-
-% \pagenumbering{arabic} %% normal page numbers (include it, if roman was used above)
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%
-%%% begin main document
-
-%notes
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Slides
 
 \section{General Info}
 \begin{frame}{General Info I}
@@ -134,7 +68,7 @@
 	\begin{itemize}
 		\item A/V Angels with two different roles
 		\item C3VOC Crew
-%		\item Kampnagel Crew
+		% \item External Crew
 		% \item Camera Angels
 		% \item Video Mixer Angels
 		%\item Stream Observing Angels
@@ -174,7 +108,7 @@
 	\end{itemize}
 \end{frame}
 
-%\begin{frame}{ Crew}
+%\begin{frame}{External Crew}
 %	\begin{itemize}
 %		\item Does Audio Mixing and controls the lighting fixtures.
 %		\item Ensure that the stage and their equipment works
@@ -519,7 +453,7 @@
 	\begin{figure} 
 		\centering
 		\includegraphics[width=0.7\textwidth]{images/closeup1.jpg}
-		\caption{Good Closeup Shot}
+		\caption{Good closeup shot}
 	\end{figure}
 \end{frame}
 
@@ -528,7 +462,7 @@
 	\begin{figure} 
 		\centering
 		\includegraphics[width=0.7\textwidth]{images/closeup2.jpg}
-		\caption{Good Closeup in Supersource}
+		\caption{Good closeup in Lecture Mode}
 	\end{figure}
 \end{frame}
 
@@ -537,7 +471,7 @@
 	\begin{figure} 
 		\centering
 		\includegraphics[width=0.7\textwidth]{images/closeup-bad1.png}
-		\caption{Half a head - not good.}
+		\caption{Half a head - not good}
 	\end{figure}
 \end{frame}
 
@@ -546,7 +480,7 @@
 	\begin{figure} 
 		\centering
 		\includegraphics[width=0.7\textwidth]{images/closeup-bad2.png}
-		\caption{Too Far out for a good supersource image.}
+		\caption{Too far out for a good Lecture Mode image}
 	\end{figure}
 \end{frame}
 
@@ -601,7 +535,7 @@
 	\begin{figure} 
 		\centering
 		\includegraphics[width=.9\textwidth]{images/voctomix2_2.png}
-		\caption{Voctomix2}
+		\caption{Voctomix2 - Lower Thirds}
 	\end{figure}
 \end{frame}
 
@@ -609,7 +543,7 @@
 	\begin{figure} 
 		\centering
 		\includegraphics[width=.9\textwidth]{images/voctomix2_3.png}
-		\caption{Voctomix2}
+		\caption{Voctomix2 - Side by Side}
 	\end{figure}
 \end{frame}
 
@@ -849,6 +783,3 @@
 %<\end{frame}
 
 \end{document}
-
-
-%%% End
