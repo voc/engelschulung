@@ -1,0 +1,71 @@
+\documentclass[aspectratio=169]{beamer}
+
+\usetheme{metropolis}
+
+% ENCODING AND LANGUAGE
+\usepackage[english]{babel}
+
+\usepackage[utf8]{inputenc}     % Universal encoding
+\usepackage[T1]{fontenc}        % Font encoding
+
+% FONT
+\usepackage{courier}            % Courier as \ttdefault
+% \usepackage{psfrag}             % replace PostScript fonts
+
+% OTHER HELPERS AND SETTINGS
+% \usepackage{graphicx}           % Include graphics to document
+% \usepackage{amsmath,amssymb,amstext}  % support for mathematics ttt
+
+% \usepackage{listings}           % code listings
+% \lstset{basicstyle=\footnotesize\ttfamily,breaklines=true}
+
+% \usepackage{units}
+\usepackage{siunitx}            % SI-Unit support
+
+% TITLE PAGE SETTINGS
+\title{A/V Angel Self-Training: Basics}
+\subtitle{Roles and Common Terminology}
+% \date{\today \currenttime}
+% \author{c3voc}
+\institute{C3VOC
+	\begin{flushright}
+		\includegraphics[height=0.4\textheight]{images/qr-code.png}\\
+		https://github.com/voc/engelschulung
+	\end{flushright}
+}
+
+%% START OF DOCUMENT
+\begin{document}
+\maketitle
+
+\input{chapters/general.tex}
+
+\section{Angeltypes}
+\begin{frame}{Angeltypes}
+	\begin{itemize}
+		\item A/V Angels:
+		\begin{itemize}
+			\item Camera Angels
+			\item Video Mixer Angels
+			\item Audio Mixer Angels (in some cases)
+		\end{itemize}
+		\item A/V Technician
+		\item C3VOC Crew
+		\item External Crew (in some cases for light and sound) % usually audio/light (remove roles above then)
+		\item Stage Manager (only on big events)
+	\end{itemize}
+\end{frame}
+
+\input{chapters/angel-av-cam.tex}
+\input{chapters/angel-av-video.tex}
+\input{chapters/angel-av-audio.tex}
+\input{chapters/angel-voc-crew.tex}
+\input{chapters/angel-external.tex}
+\input{chapters/angel-voc-avtech.tex}
+\input{chapters/angel-stagemanager.tex}
+
+
+\section{Basics}
+\input{chapters/shots.tex}
+
+\end{document}

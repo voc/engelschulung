@@ -1,0 +1,62 @@
+\documentclass[aspectratio=169]{beamer}
+
+\usetheme{metropolis}
+
+% ENCODING AND LANGUAGE
+\usepackage[english]{babel}
+
+\usepackage[utf8]{inputenc}     % Universal encoding
+\usepackage[T1]{fontenc}        % Font encoding
+
+% FONT
+\usepackage{courier}            % Courier as \ttdefault
+% \usepackage{psfrag}             % replace PostScript fonts
+
+% OTHER HELPERS AND SETTINGS
+% \usepackage{graphicx}           % Include graphics to document
+% \usepackage{amsmath,amssymb,amstext}  % support for mathematics ttt
+
+% \usepackage{listings}           % code listings
+% \lstset{basicstyle=\footnotesize\ttfamily,breaklines=true}
+
+% \usepackage{units}
+\usepackage{siunitx}            % SI-Unit support
+
+% TITLE PAGE SETTINGS
+\title{A/V Angel Self-Training: Video Mixer}
+% \date{\today \currenttime}
+% \author{c3voc}
+\institute{C3VOC
+	\begin{flushright}
+		\includegraphics[height=0.4\textheight]{images/qr-code.png}\\
+		https://github.com/voc/engelschulung
+	\end{flushright}
+}
+
+%% START OF DOCUMENT
+\begin{document}
+\maketitle
+
+% \input{selftraining-core.tex}
+\input{chapters/general.tex}
+
+\section{Video Mixer Tools}
+\input{chapters/voctomix.tex}
+
+\section{Audio Hardware}
+\input{chapters/audio-touchmix.tex}
+\input{chapters/audio-headset.tex}
+
+\section{Next Steps}
+\begin{frame}{Hands-On Training}
+	\begin{itemize}
+		\item Please do hands-on training!
+		\begin{itemize}
+			\item You have to try out voctomix to know its quirks
+			\item Feel free to try things in a break between talks
+		\end{itemize}
+		\item VOC A/V-Techs are there to help you
+	\end{itemize}
+\end{frame}
+
+\end{document}
