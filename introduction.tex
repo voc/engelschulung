@@ -1,0 +1,80 @@
+\documentclass[aspectratio=169]{beamer}
+
+\usetheme{metropolis}
+
+% ENCODING AND LANGUAGE
+\usepackage[english]{babel}
+
+\usepackage[utf8]{inputenc}     % Universal encoding
+\usepackage[T1]{fontenc}        % Font encoding
+
+% FONT
+\usepackage{courier}            % Courier as \ttdefault
+% \usepackage{psfrag}             % replace PostScript fonts
+
+% OTHER HELPERS AND SETTINGS
+% \usepackage{graphicx}           % Include graphics to document
+% \usepackage{amsmath,amssymb,amstext}  % support for mathematics ttt
+
+% \usepackage{listings}           % code listings
+% \lstset{basicstyle=\footnotesize\ttfamily,breaklines=true}
+
+% \usepackage{units}
+\usepackage{siunitx}            % SI-Unit support
+
+% TITLE PAGE SETTINGS
+\title{Angel Introduction: Camera and Video Mixer}
+% \date{\today \currenttime}
+\author{jtbx (he/him)}
+\institute{C3VOC @ EH21
+	\begin{flushright}
+		\includegraphics[height=0.4\textheight]{images/qr-code.png}\\
+		https://github.com/voc/engelschulung
+	\end{flushright}
+}
+
+%% START OF DOCUMENT
+\begin{document}
+\maketitle
+
+\begin{frame}{New Introduction Meeting Format}
+	\begin{itemize}
+		\item We're trying a new way to do this introduction meeting!
+		\item Less frontal lessons, more hands-on for new people
+		\item Prioritize experienced angels to ensure quality
+		\item Downside: We will limit the number of angels
+		\begin{itemize}
+			\item This way you have more chances to improve your skills
+			\item Goal: Everybody should be able to do at least 2 shifts per day
+			\item We need to try, how many angels we actually need
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\input{chapters/general.tex}
+
+
+\section{Recap: Audio Hardware}
+\input{chapters/audio-touchmix.tex}
+\input{chapters/audio-headset.tex}
+
+
+\section{Contacts and Action Items}
+\input{chapters/contact-general.tex}
+%\input{chapters/contact-congress.tex}
+%\input{chapters/meetings-congress.tex}
+
+\begin{frame}{Final Notes}
+	\begin{itemize}
+		\item Click "join" on the angel types you want to have
+		\item We will approve all known faces/ nick names now
+		\item New people will be approved after a shadow shift
+		\item Select shifts:
+		\begin{itemize}
+			\item Fill talks with no angels first
+			\item Take breaks
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\end{document}

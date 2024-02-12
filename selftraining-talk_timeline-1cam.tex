@@ -1,0 +1,55 @@
+\documentclass[aspectratio=169]{beamer}
+
+\usetheme{metropolis}
+
+% ENCODING AND LANGUAGE
+\usepackage[english]{babel}
+
+\usepackage[utf8]{inputenc}     % Universal encoding
+\usepackage[T1]{fontenc}        % Font encoding
+
+% FONT
+\usepackage{courier}            % Courier as \ttdefault
+% \usepackage{psfrag}             % replace PostScript fonts
+
+% OTHER HELPERS AND SETTINGS
+% \usepackage{graphicx}           % Include graphics to document
+% \usepackage{amsmath,amssymb,amstext}  % support for mathematics ttt
+
+% \usepackage{listings}           % code listings
+% \lstset{basicstyle=\footnotesize\ttfamily,breaklines=true}
+
+% \usepackage{units}
+\usepackage{siunitx}            % SI-Unit support
+
+% TITLE PAGE SETTINGS
+\title{A/V Angel Self-Training: Talk Timeline with 1 Camera}
+\subtitle{How a typical talk could be shot and cut}
+% \date{\today \currenttime}
+% \author{c3voc}
+\institute{C3VOC
+	\begin{flushright}
+		\includegraphics[height=0.4\textheight]{images/qr-code.png}\\
+		https://github.com/voc/engelschulung
+	\end{flushright}
+}
+
+%% START OF DOCUMENT
+\begin{document}
+\maketitle
+
+\begin{frame}{Usual Talk Timeline}
+  \begin{itemize}
+    \item Please be on time when your shift starts
+    \item Get to know your fellow angels, check the camera and mixer
+    \item Talk starts with an introduction by the herald
+    \item Speaker starts talk
+    \item Q\&A session
+    \item Talk ends with "thank you" and applause
+    \item Hand over to the next angels
+  \end{itemize}
+\end{frame}
+
+\input{chapters/timeline-1cam.tex}
+
+\end{document}
