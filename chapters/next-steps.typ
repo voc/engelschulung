@@ -14,7 +14,8 @@
         === now
         - Click "join" on the angel types you want to have
         - Queue up to get approved
-        - Save the link to this material: [QR-Code]
+        - Save the link to this material:
+        #align(center)[#image("../images/qr-code-github-angel-introduction.png", width: 70%)]
     ],
     [
     #align(center)[#image("../images/drawing-arrow-round-dot.jpg", width: 30%)]
