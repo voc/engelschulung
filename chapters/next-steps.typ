@@ -13,8 +13,7 @@
     #v(-20pt)
         === now
         - Click "join" on the angel types you want to have
-        - Queue up to get approved
-        - Save the link to this material:
+        - Save the link to this material (navigate to branch FOSSGIS2026):
         #align(center)[#image("../images/qr-code-github-angel-introduction.png", width: 70%)]
     ],
     [
@@ -22,10 +21,8 @@
     #v(-20pt)
         === during the event
         - Select shifts:
-            - Please sign up for shifts *\~24h in advance*
-            - Fill talks with no angels first
-            - *Take breaks*, no shifts back to back!
-            - Not more than 3 shifts per day.
+            - Please sign up for shifts in advance
+            - *Take breaks*!
             #align(center)[#image("../images/drawing-break.jpg", width: 70%)]
     ],
     [
@@ -34,7 +31,6 @@
         === before first shift
 
         - If you have no experience → Please do a *shadow shift.*
-        - If it has been a while since you touched VOC equipment → Refresh your memory at our *playground* behind stage Zero.
 
         === after your shift
 

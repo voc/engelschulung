@@ -382,24 +382,24 @@ What makes you feel (un)comfortable? How experienced is the camera angel? Are pa
   )
 )
 
-#v(15pt)
-=== technically via the intercom... 
-
-#grid(
-		columns: (1fr, 1fr),
-		gutter: 5pt,
-		[
-			#image("../images/intercom-riedel-beltpack.jpg", width: 60%)
-			- Press right button to talk
-			- Turn knob to adjust headphone volume
-			- Red light is an inactive channel!
-		], [
-			#image("../images/intercom-riedel-panel.jpg", width: 95%)
-			
-			- Press button next to "CAM" to talk to cameras
-			- Touch channel & turn red knob to adjust volume
-		]
-	)
+//#v(15pt)
+//=== technically via the intercom... 
+//
+//#grid(
+//		columns: (1fr, 1fr),
+//		gutter: 5pt,
+//		[
+//			#image("../images/intercom-riedel-beltpack.jpg", width: 60%)
+//			- Press right button to talk
+//			- Turn knob to adjust headphone volume
+//			- Red light is an inactive channel!
+//		], [
+//			#image("../images/intercom-riedel-panel.jpg", width: 95%)
+//			
+//			- Press button next to "CAM" to talk to cameras
+//			- Touch channel & turn red knob to adjust volume
+//		]
+//	)
 
 
 == What if...
@@ -479,4 +479,29 @@ What makes you feel (un)comfortable? How experienced is the camera angel? Are pa
     fill: none,
     outset: (-0pt)
   )
+)
+
+== Audio 
+
+#grid(
+	rows: (9fr, 1fr),
+	gutter: 10pt,
+	[
+	#image("../images/allenheath-main-controls.jpg", width: 100%)
+	],
+	[
+	- (un)mute speakers / laptop output (ask before talk if laptop sound is needed)
+	- if necessary: adjust room loudness ("pa")
+	]
+)
+
+#grid(
+	rows: (9fr, 1fr),
+	gutter: 10pt,
+	[
+	#image("../images/allenheath-layers.jpg", width: 100%)
+	],
+	[
+	=== Lost? → These buttons will bring you back.
+	]
 )

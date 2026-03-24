@@ -36,7 +36,7 @@
     [
         #image("../images/sony-display-annotated.jpg", width: 100%)
     ], [
-    === Display Panasonic
+    === Display Sony
         #v(15pt)
         #text(fill: red, weight: "bold")[[Recording Indicator]] \ The recording must always run, even during the break.
         #v(15pt)

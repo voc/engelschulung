@@ -15,7 +15,7 @@
   config-info(
     title: [Angel Introduction C3VOC],
     // subtitle: [Subtitle],
-    author: [39C3], // Event
+    author: [FOSSGIS 2026], // Event
     date: datetime.today(),
     institution: [Institution],
     logo: image("images/voctocat.png"),
@@ -30,12 +30,15 @@
 
 #include "chapters/mixer.typ"
 
-#include "chapters/timeline.typ"
+#include "chapters/timeline-shift.typ"
+#include "chapters/timeline-images-one-camera.typ"
+//#include "chapters/timeline-images-two-cameras.typ"
 
 #include "chapters/camera-sony.typ"
-#include "chapters/camera-panasonic.typ"
+//#include "chapters/camera-panasonic.typ"
 #include "chapters/camera-tripod.typ"
 
-#include "chapters/contact-congress.typ"
+//#include "chapters/contact-congress.typ"
+#include "chapters/contact-general.typ"
 
-#include "chapters/next-steps.typ"
+//#include "chapters/next-steps.typ"
