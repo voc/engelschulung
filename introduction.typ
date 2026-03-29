@@ -28,11 +28,13 @@
 
 #include "chapters/angeltypes.typ"
 
+#include "chapters/timeline-images-general.typ"
+#include "chapters/timeline-images-one-camera.typ"
+
 #include "chapters/mixer.typ"
+#include "chapters/audio.typ"
 
 #include "chapters/timeline-shift.typ"
-#include "chapters/timeline-images-one-camera.typ"
-//#include "chapters/timeline-images-two-cameras.typ"
 
 #include "chapters/camera-sony.typ"
 //#include "chapters/camera-panasonic.typ"

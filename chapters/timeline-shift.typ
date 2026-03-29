@@ -26,7 +26,7 @@
         - Your shift starts (please be on time).
         - Overlapping shifts allow time for handover.
         - Get to know your fellow angels
-        - Get to know your equipment: check camera / mixer
+        - Get to know your equipment: check camera & mixer / Which mics?
     ]
     ,
     [

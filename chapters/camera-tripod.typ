@@ -12,6 +12,6 @@
     [
         #image("../images/tripod-complete.png", width: 100%)
     ],[
-        #image("../images/tripod-handle.jpeg", width: 100%)
+      //  #image("../images/tripod-handle.jpeg", width: 100%)
     ]
 )

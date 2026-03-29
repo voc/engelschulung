@@ -1,3 +1,5 @@
+#import "/globals.typ": *
+
 #show heading.where(level: 3): set text(size: 1.2em, weight: "bold", fill: rgb("#176B87"))
 #set text(font: "Fira Sans", size: 0.6em)
 
