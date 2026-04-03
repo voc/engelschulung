@@ -15,15 +15,14 @@
   config-info(
     title: [Angel Introduction C3VOC],
     // subtitle: [Subtitle],
-    author: [FOSSGIS 2026], // Event
+    author: [·], // If needed, insert event name here
     date: datetime.today(),
-    institution: [Institution],
+    institution: [],
     logo: image("images/voctocat.png"),
   ),
 )
 
 
-//#include "chapters/chapter_X.typ"
 #include "chapters/general.typ"
 
 #include "chapters/angeltypes.typ"
