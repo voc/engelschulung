@@ -14,7 +14,7 @@
         === now
         - Click "join" on the angel types you want to have
         - Save the link to this material (navigate to branch FOSSGIS2026):
-        #align(center)[#image("../images/qr-code-github-angel-introduction.png", width: 70%)]
+        #align(center)[#image("../images/qr-github-generic-one-cam-slides.png", width: 70%)]
     ],
     [
     #align(center)[#image("../images/drawing-arrow-round-dot.jpg", width: 30%)]
