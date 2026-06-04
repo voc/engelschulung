@@ -279,24 +279,53 @@ What makes you feel (un)comfortable? How experienced is the camera angel? Are pa
   )
 )
 
-//#v(15pt)
-//=== technically via the intercom...
-//
-//#grid(
-//    columns: (1fr, 1fr),
-//    gutter: 5pt,
-//    [
-//      #image("../images/intercom-riedel-beltpack.jpg", width: 60%)
-//      - Press right button to talk
-//      - Turn knob to adjust headphone volume
-//      - Red light is an inactive channel!
-//    ],
-//    [
-//      #image("../images/intercom-riedel-panel.jpg", width: 95%)
-//      - Press button next to "CAM" to talk to cameras
-//      - Touch channel & turn red knob to adjust volume
-//    ]
-//  )
+== Intercom
+
+// #v(15pt)
+// === technically via the intercom...
+
+#grid(
+    columns: (1fr, 1fr),
+    gutter: 5pt,
+    [
+      #image("../images/solidcom_se_pro-main_and_client.jpeg", height: 75%)
+      - There's one master headset and 3 others
+      - Master is always needed
+      - If no audio, check master and change battery
+    ], [
+      #image("../images/solidcom_se_pro-battery_headset.jpeg", height: 75%)
+      - Press "release" button to eject battery
+    ]
+  )
+
+#grid(
+    columns: (1fr, 1fr),
+    gutter: 5pt,
+    [
+      #image("../images/solidcom_se_pro-battery_charger.jpeg", height: 65%)
+      - charging station
+      - master lasts ~4 hours, client headsets ~6 hours
+      - 8 batteries in total for 4 headsets
+    ], [
+      #image("../images/solidcom_se_pro-on_off.jpeg", height: 65%)
+      - On/ off slider
+    ]
+  )
+
+#grid(
+    columns: (1fr, 1fr),
+    gutter: 5pt,
+    [
+      #image("../images/solidcom_se_pro-boom_up.jpeg", height: 65%)
+      - Mute state: See LED on microphone
+      - Auto-mutes when boom is up
+    ], [
+      #image("../images/solidcom_se_pro-side.jpeg", height: 65%)
+      - Volume adjustment with small buttons
+      - Enable PTT by short press of big button
+      - Headset will say "muted". Hold button to speak
+    ]
+  )
 
 
 == What if...
