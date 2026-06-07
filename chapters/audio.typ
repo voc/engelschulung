@@ -7,15 +7,15 @@
 == Audio
 
 #grid(
-	rows: (9fr, 1fr),
-	gutter: 10pt,
-	[
-	#image("../images/allenheath-main-controls.jpg", width: 100%)
-	],
-	[
-	1. (un)mute speakers / laptop output (ask before talk if laptop sound is needed)
-	2. if necessary: adjust room loudness ("PA") and turn on or off music ("USB")
-	]
+  rows: (9fr, 1fr),
+  gutter: 10pt,
+  [
+    #image("../images/allenheath-main-controls.jpg", width: 100%)
+  ],
+  [
+    1. (un)mute speakers / laptop output (ask before talk if laptop sound is needed)
+    2. if necessary: adjust room loudness ("PA") and turn on or off music ("USB")
+  ]
 )
 
 #pause
@@ -52,16 +52,16 @@
 #v(30pt)
 
 #grid(
-	columns: (1fr, 1fr),
-	gutter: 10pt,
-    [
-        === headset (best for speakers)
-		#align(center)[#rect(image("../images/photo-headset.jpg", height: 80%), stroke: 4pt + rgb("#176B87"), inset: 1pt, outset: 1pt)]
-	],
-	[
-        === handmic (best for herald)
-		#align(center)[#rect(image("../images/photo-handmic.jpg", height: 80%), stroke: 4pt + rgb("#176B87"), inset: 1pt, outset: 1pt)]
-	]
+  columns: (1fr, 1fr),
+  gutter: 10pt,
+  [
+    === headset (best for speakers)
+    #align(center)[#rect(image("../images/photo-headset.jpg", height: 80%), stroke: 4pt + rgb("#176B87"), inset: 1pt, outset: 1pt)]
+  ],
+  [
+    === handmic (best for herald)
+    #align(center)[#rect(image("../images/photo-handmic.jpg", height: 80%), stroke: 4pt + rgb("#176B87"), inset: 1pt, outset: 1pt)]
+  ]
 
 )
 
@@ -133,15 +133,15 @@
 == Mixer
 
 #grid(
-	rows: (9fr, 1fr),
-	gutter: 10pt,
-	[
-	#image("../images/allenheath-main-controls.jpg", width: 100%)
-	],
-	[
-	Mics 1 + 2  are headsets (HS); Mics 3 + 4 are handheld mics (Hand) \
+  rows: (9fr, 1fr),
+  gutter: 10pt,
+  [
+    #image("../images/allenheath-main-controls.jpg", width: 100%)
+  ],
+  [
+    Mics 1 + 2  are headsets (HS); Mics 3 + 4 are handheld mics (Hand) \
     *Microphones that are unmuted are in the stream and recording!*
-	]
+  ]
 )
 
 #pause
@@ -159,14 +159,14 @@
 )
 
 #grid(
-	rows: (9fr, 1fr),
-	gutter: 10pt,
-	[
-	#image("../images/allenheath-main-controls.jpg", width: 100%)
-	],
-	[
-	*Lost? → These buttons will bring you back.*
-	]
+  rows: (9fr, 1fr),
+  gutter: 10pt,
+  [
+    #image("../images/allenheath-main-controls.jpg", width: 100%)
+  ],
+  [
+    *Lost? → These buttons will bring you back.*
+  ]
 )
 
 #place(

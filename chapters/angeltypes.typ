@@ -21,13 +21,13 @@
         - operates the cameras
         - maintains good camera settings
     ],
-     [
+    [
 
     ],
-     [
+    [
 
     ],
-     [
+    [
         #align(center)[#image("../images/drawing-scissors.jpg", width: 80%)]
     ],
     [
@@ -36,7 +36,7 @@
         - composes images from multiple sources
         - mix for live stream and recordings
     ],
-     [
+    [
         #align(center)[#image("../images/drawing-telephone-red.jpg", width: 80%)]
     ],
     [
@@ -46,7 +46,7 @@
         - familiar with all equipment in use
         - able to fix (nearly) all the issues
     ],
-     [
+    [
         #align(center)[#image("../images/drawing-headphones.jpg", width: 80%)]
     ],
     [

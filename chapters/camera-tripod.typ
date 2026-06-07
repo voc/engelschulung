@@ -7,11 +7,12 @@
 == Tripod: Sachtler ace
 
 #grid(
-    columns: (2fr, 1fr),
-    gutter: 10pt,
-    [
-        #image("../images/tripod-complete.png", width: 100%)
-    ],[
-      //  #image("../images/tripod-handle.jpeg", width: 100%)
-    ]
+  columns: (2fr, 1fr),
+  gutter: 10pt,
+  [
+    #image("../images/tripod-complete.png", width: 100%)
+  ],
+  [
+    // #image("../images/tripod-handle.jpeg", width: 100%)
+  ]
 )
