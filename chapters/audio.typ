@@ -10,7 +10,7 @@
   rows: (9fr, 1fr),
   gutter: 10pt,
   [
-    #image("../images/allenheath-main-controls.jpg", width: 100%)
+    #image("../images/allenheath-main-controls.jpeg", width: 100%)
   ],
   [
     1. (un)mute speakers / laptop output (ask before talk if laptop sound is needed)
@@ -136,7 +136,7 @@
   rows: (9fr, 1fr),
   gutter: 10pt,
   [
-    #image("../images/allenheath-main-controls.jpg", width: 100%)
+    #image("../images/allenheath-main-controls.jpeg", width: 100%)
   ],
   [
     Mics 1 + 2  are headsets (HS); Mics 3 + 4 are handheld mics (Hand) \
@@ -162,7 +162,7 @@
   rows: (9fr, 1fr),
   gutter: 10pt,
   [
-    #image("../images/allenheath-main-controls.jpg", width: 100%)
+    #image("../images/allenheath-main-controls.jpeg", width: 100%)
   ],
   [
     *Lost? → These buttons will bring you back.*

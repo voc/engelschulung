@@ -5,7 +5,7 @@
 
 == This could be your setup
 
-#image("../images/room-setup-one-camera.jpg", width: 92%)
+#image("../images/room-setup-one-camera.jpeg", width: 92%)
 
 #pause
 
