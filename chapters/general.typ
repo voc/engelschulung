@@ -3,10 +3,10 @@
 #show heading: set text(size: 1.8em, weight: "bold")
 #set text(font: "Fira Sans", size: 0.8em)
 
-=== Thank you for being here 
+=== Thank you for being here
 
 & helping us to stream, record and publish (nearly) all talks!
-  
+
   #v(30pt)
 
 #grid(

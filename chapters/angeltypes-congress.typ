@@ -15,7 +15,7 @@
         #align(center)[#image("../images/drawing-camera.jpg", width: 80%)]
     ],
     [
-        
+
         === Camera Angel
         - one per camera
         - operates the cameras
@@ -60,24 +60,24 @@
          //- adjust amplification for individual microphones
          //- check audio level (loudness) for stream
          - CCH (paid)
-    ],  
+    ],
     [
         #align(center)[#image("../images/drawing-light.jpg", width: 80%)]
     ],
     [
          === Light
          - CCH (paid)
-    ],   
+    ],
 )
 
 #pause
 
 #place(
-  dx: -10pt, 
+  dx: -10pt,
   dy: -420pt,
   rect(
-    width: 50%, 
-    height: 30%, 
+    width: 50%,
+    height: 30%,
     stroke: 4pt + red,
     fill: none,
     outset: (-0pt)
@@ -86,11 +86,11 @@
 
 // camera & video "YOU"
 #place(
-  dx: -10pt, 
+  dx: -10pt,
   dy: -420pt,
   rect(
-    width: 50%, 
-    height: 60%, 
+    width: 50%,
+    height: 60%,
     stroke: 4pt + red,
     fill: none,
     outset: (-0pt)

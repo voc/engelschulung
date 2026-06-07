@@ -10,7 +10,7 @@
 #pause
 
 #place(
-  dx: 500pt, 
+  dx: 500pt,
   dy: -280pt,
   text(size: 35pt, fill: yellow, weight:"bold"
   )[Camera]
@@ -19,7 +19,7 @@
 #pause
 
 #place(
-  dx: 250pt, 
+  dx: 250pt,
   dy: -180pt,
   text(size: 35pt, fill: yellow, weight:"bold"
   )[Audio mixer]
@@ -28,7 +28,7 @@
 #pause
 
 #place(
-  dx: 50pt, 
+  dx: 50pt,
   dy: -380pt,
   text(size: 35pt, fill: yellow, weight:"bold"
   )[Video mixer]
@@ -50,11 +50,11 @@
 )
 
 #place(
-  dx: 280pt, 
+  dx: 280pt,
   dy: -230pt,
   rect(
-    width: 30%, 
-    height: 25%, 
+    width: 30%,
+    height: 25%,
     stroke: 4pt + yellow,
     fill: none,
     outset: (-0pt)
@@ -80,11 +80,11 @@
 )
 
 #place(
-  dx: 310pt, 
+  dx: 310pt,
   dy: -230pt,
   rect(
-    width: 18%, 
-    height: 25%, 
+    width: 18%,
+    height: 25%,
     stroke: 4pt + yellow,
     fill: none,
     outset: (-0pt)
@@ -94,11 +94,11 @@
 #pause
 
 #place(
-  dx: 455pt, 
+  dx: 455pt,
   dy: -230pt,
   rect(
-    width: 7%, 
-    height: 25%, 
+    width: 7%,
+    height: 25%,
     stroke: 4pt + yellow,
     fill: none,
     outset: (-0pt)
@@ -192,21 +192,21 @@ _REPEAT AND ADJUST..._
 === Get to know each other:
 What makes you feel (un)comfortable? How experienced is the camera angel? Are pans okay?
 
-#pause 
+#pause
 
 #place(
-  dx: 130pt, 
+  dx: 130pt,
   dy: -260pt,
   text(size: 40pt,
   )[✅]
 )
 
 #place(
-  dx: 60pt, 
+  dx: 60pt,
   dy: -294pt,
   rect(
-    width: 9%, 
-    height: 21%, 
+    width: 9%,
+    height: 21%,
     stroke: 4pt + green,
     fill: none,
     outset: (-0pt)
@@ -214,25 +214,25 @@ What makes you feel (un)comfortable? How experienced is the camera angel? Are pa
 )
 
 #place(
-  dx: 10pt, 
+  dx: 10pt,
   dy: -310pt,
   text(size: 15pt, fill: green, weight: "bold"
   )[lecture mode approved]
 )
 
 #place(
-  dx: 330pt, 
+  dx: 330pt,
   dy: -280pt,
   text(size: 40pt,
   )[❌]
 )
 
 #place(
-  dx: 260pt, 
+  dx: 260pt,
   dy: -294pt,
   rect(
-    width: 9%, 
-    height: 21%, 
+    width: 9%,
+    height: 21%,
     stroke: 4pt + red,
     fill: none,
     outset: (-0pt)
@@ -240,18 +240,18 @@ What makes you feel (un)comfortable? How experienced is the camera angel? Are pa
 )
 
 #place(
-  dx: 520pt, 
+  dx: 520pt,
   dy: -280pt,
   text(size: 40pt,
   )[❔]
 )
 
 #place(
-  dx: 450pt, 
+  dx: 450pt,
   dy: -294pt,
   rect(
-    width: 9%, 
-    height: 21%, 
+    width: 9%,
+    height: 21%,
     stroke: 4pt + gray,
     fill: none,
     outset: (-0pt)
@@ -259,18 +259,18 @@ What makes you feel (un)comfortable? How experienced is the camera angel? Are pa
 )
 
 #place(
-  dx: 710pt, 
+  dx: 710pt,
   dy: -280pt,
   text(size: 40pt,
   )[❌]
 )
 
 #place(
-  dx: 640pt, 
+  dx: 640pt,
   dy: -294pt,
   rect(
-    width: 9%, 
-    height: 21%, 
+    width: 9%,
+    height: 21%,
     stroke: 4pt + red,
     fill: none,
     outset: (-0pt)
@@ -278,7 +278,7 @@ What makes you feel (un)comfortable? How experienced is the camera angel? Are pa
 )
 
 //#v(15pt)
-//=== technically via the intercom... 
+//=== technically via the intercom...
 //
 //#grid(
 //		columns: (1fr, 1fr),
@@ -290,7 +290,7 @@ What makes you feel (un)comfortable? How experienced is the camera angel? Are pa
 //			- Red light is an inactive channel!
 //		], [
 //			#image("../images/intercom-riedel-panel.jpg", width: 95%)
-//			
+//
 //			- Press button next to "CAM" to talk to cameras
 //			- Touch channel & turn red knob to adjust volume
 //		]
@@ -333,11 +333,11 @@ What makes you feel (un)comfortable? How experienced is the camera angel? Are pa
 )
 
 #place(
-  dx: 670pt, 
+  dx: 670pt,
   dy: -375pt,
   rect(
-    width: 8%, 
-    height: 60%, 
+    width: 8%,
+    height: 60%,
     stroke: 4pt + yellow,
     fill: none,
     outset: (-0pt)
@@ -362,11 +362,11 @@ What makes you feel (un)comfortable? How experienced is the camera angel? Are pa
 )
 
 #place(
-  dx: 300pt, 
+  dx: 300pt,
   dy: -200pt,
   rect(
-    width: 7%, 
-    height: 12%, 
+    width: 7%,
+    height: 12%,
     stroke: 4pt + yellow,
     fill: none,
     outset: (-0pt)

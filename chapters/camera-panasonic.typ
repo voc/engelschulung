@@ -10,12 +10,12 @@
     gutter: 15pt,
     grid.cell(colspan: 3)[
         #align(center)[#image("../images/panasonic-side-annotated.jpg", width: 80%)]
-        
+
     ],
     //=== Hardware Camera Controls
         //Cameras are in manual mode because of difficult lighting situation.
     grid.cell(colspan: 1)[#text(fill: red, weight: "bold")[Focus] - control sharpness ],
-    grid.cell(colspan: 1)[#text(fill: green, weight: "bold")[Zoom] - vary the focal length ], 
+    grid.cell(colspan: 1)[#text(fill: green, weight: "bold")[Zoom] - vary the focal length ],
     grid.cell(colspan: 1)[#text(fill: blue, weight: "bold")[Iris] - will have to be adjusted, depending on light situation \ (_If you change something, tell other camera angels to change it the same way in all cams._) ]
 )
 

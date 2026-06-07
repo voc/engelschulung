@@ -4,7 +4,7 @@
 #set text(font: "Fira Sans", size: 0.7em)
 
 
-== Audio 
+== Audio
 
 #grid(
 	rows: (9fr, 1fr),
@@ -21,11 +21,11 @@
 #pause
 
 #place(
-  dx: 200pt, 
+  dx: 200pt,
   dy: -150pt,
   rect(
-    width: 35%, 
-    height: 12%, 
+    width: 35%,
+    height: 12%,
     stroke: 4pt + yellow,
     fill: none,
     outset: (-0pt)
@@ -35,11 +35,11 @@
 #pause
 
 #place(
-  dx: 500pt, 
+  dx: 500pt,
   dy: -300pt,
   rect(
-    width: 12%, 
-    height: 48%, 
+    width: 12%,
+    height: 48%,
     stroke: 4pt + yellow,
     fill: none,
     outset: (-0pt)
@@ -56,17 +56,17 @@
 	gutter: 10pt,
     [
         === headset (best for speakers)
-		#align(center)[#rect(image("../images/photo-headset.jpg", height: 80%), stroke: 4pt + rgb("#176B87"), inset: 1pt, outset: 1pt)]	
+		#align(center)[#rect(image("../images/photo-headset.jpg", height: 80%), stroke: 4pt + rgb("#176B87"), inset: 1pt, outset: 1pt)]
 	],
 	[
         === handmic (best for herald)
 		#align(center)[#rect(image("../images/photo-handmic.jpg", height: 80%), stroke: 4pt + rgb("#176B87"), inset: 1pt, outset: 1pt)]
 	]
-	
+
 )
 
 #place(
-  dx: 320pt, 
+  dx: 320pt,
   dy: -270pt,
   image(
     "../images/photo-mic-number.jpg",
@@ -75,11 +75,11 @@
 
 
 #place(
-  dx: 105pt, 
+  dx: 105pt,
   dy: -115pt,
   rect(
-    width: 4%, 
-    height: 5%, 
+    width: 4%,
+    height: 5%,
     stroke: 4pt + yellow,
     fill: none,
     outset: (-0pt)
@@ -87,11 +87,11 @@
 )
 
 #place(
-  dx: 565pt, 
+  dx: 565pt,
   dy: -50pt,
   rect(
-    width: 3%, 
-    height: 10%, 
+    width: 3%,
+    height: 10%,
     stroke: 4pt + yellow,
     fill: none,
     outset: (-0pt)
@@ -99,7 +99,7 @@
 )
 
 #place(
-  dx: 490pt, 
+  dx: 490pt,
   dy: -200pt,
   line(
     length: 150pt,
@@ -109,7 +109,7 @@
 )
 
 #place(
-  dx: 330pt, 
+  dx: 330pt,
   dy: -200pt,
   line(
     length: 200pt,
@@ -119,11 +119,11 @@
 )
 
 #place(
-  dx: 355pt, 
+  dx: 355pt,
   dy: -210pt,
   rect(
-    width: 15%, 
-    height: 12%, 
+    width: 15%,
+    height: 12%,
     stroke: 4pt + yellow,
     fill: none,
     outset: (-0pt)
@@ -147,11 +147,11 @@
 #pause
 
 #place(
-  dx: 200pt, 
+  dx: 200pt,
   dy: -150pt,
   rect(
-    width: 28%, 
-    height: 12%, 
+    width: 28%,
+    height: 12%,
     stroke: 4pt + yellow,
     fill: none,
     outset: (-0pt)
@@ -170,11 +170,11 @@
 )
 
 #place(
-  dx: 350pt, 
+  dx: 350pt,
   dy: -97pt,
   rect(
-    width: 9%, 
-    height: 11%, 
+    width: 9%,
+    height: 11%,
     stroke: 4pt + yellow,
     fill: none,
     outset: (-0pt)
@@ -182,11 +182,11 @@
 )
 
 #place(
-  dx: 185pt, 
+  dx: 185pt,
   dy: -330pt,
   rect(
-    width: 9%, 
-    height: 11%, 
+    width: 9%,
+    height: 11%,
     stroke: 4pt + yellow,
     fill: none,
     outset: (-0pt)

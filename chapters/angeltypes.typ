@@ -15,17 +15,17 @@
         #align(center)[#image("../images/drawing-camera.jpg", width: 80%)]
     ],
     [
-        
+
         === Camera Angel
         - one per camera
         - operates the cameras
         - maintains good camera settings
     ],
      [
-        
+
     ],
      [
-    
+
     ],
      [
         #align(center)[#image("../images/drawing-scissors.jpg", width: 80%)]
@@ -55,23 +55,23 @@
          - (un)mute microphones
          - adjust amplification for individual microphones
          - check audio level (loudness) for stream
-    ],  
-    [
-        
     ],
     [
-        
-    ],   
+
+    ],
+    [
+
+    ],
 )
 
 #pause
 
 #place(
-  dx: -10pt, 
+  dx: -10pt,
   dy: -420pt,
   rect(
-    width: 50%, 
-    height: 30%, 
+    width: 50%,
+    height: 30%,
     stroke: 4pt + red,
     fill: none,
     outset: (-0pt)
@@ -80,11 +80,11 @@
 
 // camera & video
 #place(
-  dx: -10pt, 
+  dx: -10pt,
   dy: -280pt,
   rect(
-    width: 50%, 
-    height: 65%, 
+    width: 50%,
+    height: 65%,
     stroke: 4pt + red,
     fill: none,
     outset: (-0pt)

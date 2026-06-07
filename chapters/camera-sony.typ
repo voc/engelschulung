@@ -33,7 +33,7 @@
         #align(center)[#image("../images/sony-side-annotated.jpg", width: 70%)]
     ],
     grid.cell(colspan: 1)[#text(fill: red, weight: "bold")[Focus] - control sharpness \ (_Please use autofocus._)],
-    grid.cell(colspan: 1)[ #text(fill: green, weight: "bold")[Zoom] - vary the focal length ], 
+    grid.cell(colspan: 1)[ #text(fill: green, weight: "bold")[Zoom] - vary the focal length ],
     grid.cell(colspan: 1)[#text(fill: blue, weight: "bold")[Iris] - will have to be adjusted, depending on light situation  (_If you change something, tell other camera angels to change it the same way in all cams._)
     ]
 )

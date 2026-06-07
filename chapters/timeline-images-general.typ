@@ -18,7 +18,7 @@
 		- capture what happens on stage
 		- make it effortless to follow content
 		- convey mood in the room
-		
+
 		#v(15pt)
 
 		*You are the "eye" of the audience in \ live stream and recording.*
@@ -60,14 +60,14 @@
 	]
 )
 
-// yellow rectangle 
+// yellow rectangle
 
 #place(
-  dx: -20pt, 
+  dx: -20pt,
   dy: -200pt,
   rect(
-    width: 105%, 
-    height: 37%, 
+    width: 105%,
+    height: 37%,
     stroke: 4pt + yellow,
     fill: none,
     outset: (-0pt)
@@ -97,7 +97,7 @@
 
 	],
 	[
-		❌ *When not to use*: 
+		❌ *When not to use*:
 		- difficult for more than one speaker
 	],
 )
@@ -156,11 +156,11 @@
 )
 
 #place(
-  dx: -5pt, 
+  dx: -5pt,
   dy: -180pt,
   rect(
-    width: 37%, 
-    height: 45%, 
+    width: 37%,
+    height: 45%,
     stroke: none,
     fill: white.transparentize(30%),
     outset: (-0pt)
@@ -184,5 +184,5 @@
 	❌ *When not to use*
 	- Don't use this view to show the slides – use lecture mode!
 	]
-	
+
 )

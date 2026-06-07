@@ -13,7 +13,7 @@
     row-gutter: 5pt,
     rows: auto,
     align: left + top,
-    
+
 
     // image 1
     // version A
@@ -22,7 +22,7 @@
     // version B
     [ #rect(image("../images/drawing-view-closeup.jpg", width: 100%), inset: 0.1pt, outset: 0.1pt)],
     [ *1. Camera*: Show the speaker.],
-    
+
     // image 2
     // version A
     [ #rect(image("../images/drawing-view-closeup-without-lectern.jpg", width: 100%), inset: 0.1pt, outset: 0.1pt)],
@@ -30,7 +30,7 @@
     // version B
     [ #rect(image("../images/drawing-view-lecture.jpg", width: 100%), inset: 0.1pt, outset: 0.1pt) ],
     [ *2. Lecture mode*: Continue showing speaker, but also \ the slides. ],
-    
+
     // image 3
     // version A
     [ #rect(image("../images/drawing-view-slides.png", width: 100%), inset: 0.1pt, outset: 0.1pt) ],
@@ -38,7 +38,7 @@
     // version B
     [ #rect(image("../images/drawing-view-slides.png", width: 100%), inset: 0.1pt, outset: 0.1pt) ],
     [ *3. Slides*: show the slides in full screen because they are detailed and small ],
-    
+
     // image 4
     // version A
     [ #rect(image("../images/drawing-view-lecture.jpg", width: 100%), inset: 0.1pt, outset: 0.1pt) ],
@@ -46,7 +46,7 @@
     // verison B
     [ #rect(image("../images/drawing-view-closeup-without-lectern-gesture.jpg", width: 100%), inset: 0.1pt, outset: 0.1pt) ],
     [ *4. Camera*: speaker tells side story, show speaker and gestures ],
-    
+
     // image 5
     // version A
     [ #rect(image("../images/drawing-view-closeup-without-lectern-gesture.jpg", width: 100%), inset: 0.1pt, outset: 0.1pt) ],
@@ -54,17 +54,17 @@
     // version B
     [ #rect(image("../images/drawing-view-lecture.jpg", width: 100%), inset: 0.1pt, outset: 0.1pt) ],
     [ *5. Lecture mode* – Show \ slides and speaker ]
-    
+
 )
 #v(-3pt)
 _In general: Don’t be too cutty – Pace your videos temperately. Do not cut too often._
 
 #place(
-  dx: -6pt, 
+  dx: -6pt,
   dy: -405pt,
   rect(
-    width: 49%, 
-    height: 92%, 
+    width: 49%,
+    height: 92%,
     stroke: 4pt + gray,
     fill: none,
     outset: (-0pt)
@@ -72,11 +72,11 @@ _In general: Don’t be too cutty – Pace your videos temperately. Do not cut t
 )
 
 #place(
-  dx: 384pt, 
+  dx: 384pt,
   dy: -405pt,
   rect(
-    width: 49%, 
-    height: 92%, 
+    width: 49%,
+    height: 92%,
     stroke: 4pt + gray,
     fill: none,
     outset: (-0pt)
